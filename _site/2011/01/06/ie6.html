@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>IE6에서의 .PNG 배경처리 ( 링크 오류.. ) | Aloveu</title>
+    <link rel="icon" href="http://localhost:4000/assets/img/favicon.ico" type="image/gif" sizes="16x16" />
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Aloveu || Archives" />
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>IE6에서의 .PNG 배경처리 ( 링크 오류.. ) | Aloveu   Archives</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="IE6에서의 .PNG 배경처리 ( 링크 오류.. )" />
+<meta name="author" content="김광훈" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="1. 핵으로 처리 * html #id {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=&#39;img.png&#39;,sizingMethod=&#39;crop&#39;); } 배경으로 png파일이 들어갈경우 ie6 에서 링크가 안먹히는 경우가 생깁니다. 이럴때는 해당 링크 부분에 position:relative;를 주시면 해결이 됩니다.안되면 cursor:pointer; 로 해결!!! 2. DD_belatedPNG 다음링크에서 자바스크립트파일을 다운 받아 업로드 합니다. &lt;!--[if IE 6]&gt; &lt;script type=&quot;javascript&quot;&gt; DD_belatedPNG.fix(&#39;.bgPng&#39;);&lt;/script&gt;&lt;![endif]--&gt; &lt;p class=&quot;bgPng&quot;&gt;백그라운드부분&lt;/p&gt;" />
+<meta property="og:description" content="1. 핵으로 처리 * html #id {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=&#39;img.png&#39;,sizingMethod=&#39;crop&#39;); } 배경으로 png파일이 들어갈경우 ie6 에서 링크가 안먹히는 경우가 생깁니다. 이럴때는 해당 링크 부분에 position:relative;를 주시면 해결이 됩니다.안되면 cursor:pointer; 로 해결!!! 2. DD_belatedPNG 다음링크에서 자바스크립트파일을 다운 받아 업로드 합니다. &lt;!--[if IE 6]&gt; &lt;script type=&quot;javascript&quot;&gt; DD_belatedPNG.fix(&#39;.bgPng&#39;);&lt;/script&gt;&lt;![endif]--&gt; &lt;p class=&quot;bgPng&quot;&gt;백그라운드부분&lt;/p&gt;" />
+<link rel="canonical" href="http://localhost:4000/2011/01/06/ie6.html" />
+<meta property="og:url" content="http://localhost:4000/2011/01/06/ie6.html" />
+<meta property="og:site_name" content="Aloveu   Archives" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2011-01-06T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="IE6에서의 .PNG 배경처리 ( 링크 오류.. )" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"http://localhost:4000/2011/01/06/ie6.html","headline":"IE6에서의 .PNG 배경처리 ( 링크 오류.. )","dateModified":"2011-01-06T00:00:00+09:00","datePublished":"2011-01-06T00:00:00+09:00","author":{"@type":"Person","name":"김광훈"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2011/01/06/ie6.html"},"description":"1. 핵으로 처리 * html #id {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=&#39;img.png&#39;,sizingMethod=&#39;crop&#39;); } 배경으로 png파일이 들어갈경우 ie6 에서 링크가 안먹히는 경우가 생깁니다. 이럴때는 해당 링크 부분에 position:relative;를 주시면 해결이 됩니다.안되면 cursor:pointer; 로 해결!!! 2. DD_belatedPNG 다음링크에서 자바스크립트파일을 다운 받아 업로드 합니다. &lt;!--[if IE 6]&gt; &lt;script type=&quot;javascript&quot;&gt; DD_belatedPNG.fix(&#39;.bgPng&#39;);&lt;/script&gt;&lt;![endif]--&gt; &lt;p class=&quot;bgPng&quot;&gt;백그라운드부분&lt;/p&gt;","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+<header class="site-header">
+    <h1 class="logo">
+        <img src="/assets/img/logo.png" alt="Aloveu"/>
+    </h1>
+    <nav>
+        <ul class="navbar">
+            <li>
+                <a href="/profile" class="">PROFILE</a>
+            </li>
+            <li>
+                <a href="/" class="current">ARCHIVES</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<article class="site-content">
+    <h1>IE6에서의 .PNG 배경처리 ( 링크 오류.. )</h1>
+    <p>06 Jan 2011 - 김광훈</p>
+
+    <div>
+    <h3>1. 핵으로 처리</h3>
+    <pre class="html cH_kip"><ol><li class="odd"><span><code>* html #id {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img.png',sizingMethod='crop'); }</code></span></li></ol></pre>
+    <p>배경으로 png파일이 들어갈경우 ie6 에서 링크가 안먹히는 경우가 생깁니다. 이럴때는 해당 링크 부분에 position:relative;를 주시면 해결이 됩니다.안되면 cursor:pointer; 로 해결!!!</p>
+    <p><span id="more-38"></span></p>
+    <h3>2. DD_belatedPNG</h3>
+    <p><a href="http://www.dillerdesign.com/experiment/DD_belatedPNG/" target="_blank" title="새창">다음링크</a>에서 자바스크립트파일을 다운 받아 업로드 합니다.</p>
+    <pre class="html cH_kip"><ol><li class="odd"><span><b class="comment">&lt;!--[if IE 6]&gt; </b></span></li><li class="even"><span><b class="comment">&lt;script type="javascript"&gt;</b></span></li><li class="odd"><span><b class="comment">	DD_belatedPNG.fix('.bgPng');</b></span></li><li class="even"><span><b class="comment">&lt;/script&gt;</b></span></li><li class="odd fifth"><span><b class="comment">&lt;![endif]--&gt;</b> </span></li><li class="even"><span><b class="group">&lt;</b><a href="http://tranbot.net/html5/grouping-content.html#the-p-element" class="group">p</a> class="bgPng"<b class="group">&gt;</b>백그라운드부분<b class="group">&lt;/p</b><b class="group">&gt;</b></span></li></ol></pre>
+</div>
+
+</article>
+
+<div class="pagination">
+    
+    <a href="/2010/12/16/table.html" class="prev-post">자주 쓰는 기본 테이블 구조</a>
+    
+    
+    
+    <a href="/2011/11/30/accessibility.html" class="next-post">컨텐츠 작업하면서 꼭 확인해야 할 접근성 부분</a>
+    
+</div>
+<footer class="site-footer">
+    <ul class="sns-group">
+        <li><a href="https://www.instagram.com/aloveuu/?hl=ko">instagram</a></li>
+        <li><a href="https://web.facebook.com/YooWorl">facebook</a></li>
+    </ul>
+
+    <p class="copyright">© 2020.11. by ALOVEU</p>
+</footer>
+</body>
+</html>

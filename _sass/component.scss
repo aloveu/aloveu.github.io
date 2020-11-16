@@ -1,0 +1,11 @@
+@mixin arrow( $width : 10px ) {
+    content:'';
+    display: inline-block;
+    width:$width;
+    height:$width;
+    border:{
+        bottom: 1px solid $p-arrow-color;
+        left: 1px solid $p-arrow-color;
+    }
+    transform: rotate(45deg);
+}

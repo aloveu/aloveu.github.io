@@ -1,0 +1,15 @@
+<header class="site-header">
+    <h1 class="logo">
+        <img src="/assets/img/logo.png" alt="Aloveu"/>
+    </h1>
+    <nav>
+        <ul class="navbar">
+            <li>
+                <a href="/profile" class="{% if page.url == '/profile.html' %}current{% endif %}">PROFILE</a>
+            </li>
+            <li>
+                <a href="{{ base_path }}/" class="{% if page.url != '/profile.html' %}current{% endif %}">ARCHIVES</a>
+            </li>
+        </ul>
+    </nav>
+</header>

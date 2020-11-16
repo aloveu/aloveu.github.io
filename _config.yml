@@ -1,26 +1,22 @@
 title: Aloveu || Archives
-author_logo: profile.png
-author: 김광훈( 金光勳 , Kim GwangHun )
+author: 김광훈
 author_birthday: 1983년 12월 16일
 author_bio: Hi :D
 author_email: "kyouyoum@gmail.com"
 author_location: 경기도 하남시
 
 urls:
-  - name: Home
-    url: /
-  - name: About
-    url: /about.html
   - name: Archives
-    url: /archives.html
-  - name: Blog
-    url: /blog.html
+    url: /
+  - name: Profile
+    url: /profile
 
 # pagination of posts
-paginate: 4
-per_page: 4
-paginate_path_archive: "/archives/page:num/"
-paginate_path_blog: "/blog/page:num/"
+paginate: 7
+per_page: 7
+paginate_path: "/page/:num/"
+
+excerpt_separator: <!--more-->
 
 plugins:
   - jekyll-paginate

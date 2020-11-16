@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PC, MOBILE 분기 처리 하기 ( & 각 디바이스마다 분기처리) | Aloveu</title>
+    <link rel="icon" href="http://localhost:4000/assets/img/favicon.ico" type="image/gif" sizes="16x16" />
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Aloveu || Archives" />
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>PC, MOBILE 분기 처리 하기 ( &amp; 각 디바이스마다 분기처리) | Aloveu   Archives</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="PC, MOBILE 분기 처리 하기 ( &amp; 각 디바이스마다 분기처리)" />
+<meta name="author" content="김광훈" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="스크립트로 지금 접속하는 브라우저가 pc인지 모바일인지 구분을 할려면 navigator.userAgent 나 navigator.platform 으로 체크해서 분기 처리 해주면 된다. userAgent로 체크를 하게 되면 크롬같은 브라우저에서 개발자 툴로 agent 값을 모바일쪽으로 바꾸고 디버깅하면서 개발할 수 있지만 platform으로 체크하면 브라우저에서 디버깅하면서 개발하기 어렵다. 먼저 platform 으로 체크 했을때 코드는 다음과 같다 &lt;script type=&quot;text/javascript&quot;&gt;var filter = &quot;win16|win32|win64|mac|Mac&quot;;if( navigator.platform &amp;&amp; &#39;&#39; != &#39;Y&#39;){ if( filter.indexOf(navigator.platform.toLowerCase())&lt;0 ){ alert(&#39;플랫폼 기반 기기체크 : MOBILE 접속중&#39;); }else{ alert(&#39;플랫폼 기반 기기체크 : PC 접속중&#39;); }}&lt;/script&gt; userAgent로 체크했을때는 다음과 같다. &lt;script type=&quot;text/javascript&quot;&gt;var agent = navigator.userAgent;if (agent.match(/iPhone|iPod|iPad|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || agent.match(/LG|SAMSUNG|Samsung/) != null) { alert(&#39;agent 기반 기기체크 : MOBILE 접속중&#39;);} else { alert(&#39;agent 기반 기기체크 : PC 접속중&#39;);}&lt;/script&gt; 각 기기로 체크를 하려면 agent를 알럿값으로 찍어보고 상단코드처럼 if 문으로 해당 agent값을 매칭시켜서 그 값만 다르게 처리하면 된다. 예를 들어 ‘앱다운받기’ 라는 버튼을 안드로이드에서 누르면 구글로, 아이폰으로 누르면 앱스토어로 가게 하려면 &lt;script type=&quot;text/javascript&quot;&gt;var agent = navigator.userAgent;if (agent.match(/iPhone|iPod|iPad/i) != null) { //아이폰 document.write(&#39;&lt;a href=&quot;앱스토어URL&quot;&gt;앱다운받기&lt;/a&gt;&#39;);} else { //안드로이드 document.write(&#39;&lt;a href=&quot;구글URL&quot;&gt;앱다운받기&lt;/a&gt;&#39;);}&lt;/script&gt; 식으로 분기처리해서 버튼을 보여줘도 된다." />
+<meta property="og:description" content="스크립트로 지금 접속하는 브라우저가 pc인지 모바일인지 구분을 할려면 navigator.userAgent 나 navigator.platform 으로 체크해서 분기 처리 해주면 된다. userAgent로 체크를 하게 되면 크롬같은 브라우저에서 개발자 툴로 agent 값을 모바일쪽으로 바꾸고 디버깅하면서 개발할 수 있지만 platform으로 체크하면 브라우저에서 디버깅하면서 개발하기 어렵다. 먼저 platform 으로 체크 했을때 코드는 다음과 같다 &lt;script type=&quot;text/javascript&quot;&gt;var filter = &quot;win16|win32|win64|mac|Mac&quot;;if( navigator.platform &amp;&amp; &#39;&#39; != &#39;Y&#39;){ if( filter.indexOf(navigator.platform.toLowerCase())&lt;0 ){ alert(&#39;플랫폼 기반 기기체크 : MOBILE 접속중&#39;); }else{ alert(&#39;플랫폼 기반 기기체크 : PC 접속중&#39;); }}&lt;/script&gt; userAgent로 체크했을때는 다음과 같다. &lt;script type=&quot;text/javascript&quot;&gt;var agent = navigator.userAgent;if (agent.match(/iPhone|iPod|iPad|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || agent.match(/LG|SAMSUNG|Samsung/) != null) { alert(&#39;agent 기반 기기체크 : MOBILE 접속중&#39;);} else { alert(&#39;agent 기반 기기체크 : PC 접속중&#39;);}&lt;/script&gt; 각 기기로 체크를 하려면 agent를 알럿값으로 찍어보고 상단코드처럼 if 문으로 해당 agent값을 매칭시켜서 그 값만 다르게 처리하면 된다. 예를 들어 ‘앱다운받기’ 라는 버튼을 안드로이드에서 누르면 구글로, 아이폰으로 누르면 앱스토어로 가게 하려면 &lt;script type=&quot;text/javascript&quot;&gt;var agent = navigator.userAgent;if (agent.match(/iPhone|iPod|iPad/i) != null) { //아이폰 document.write(&#39;&lt;a href=&quot;앱스토어URL&quot;&gt;앱다운받기&lt;/a&gt;&#39;);} else { //안드로이드 document.write(&#39;&lt;a href=&quot;구글URL&quot;&gt;앱다운받기&lt;/a&gt;&#39;);}&lt;/script&gt; 식으로 분기처리해서 버튼을 보여줘도 된다." />
+<link rel="canonical" href="http://localhost:4000/2016/02/01/Agent.html" />
+<meta property="og:url" content="http://localhost:4000/2016/02/01/Agent.html" />
+<meta property="og:site_name" content="Aloveu   Archives" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-02-01T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="PC, MOBILE 분기 처리 하기 ( &amp; 각 디바이스마다 분기처리)" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"http://localhost:4000/2016/02/01/Agent.html","headline":"PC, MOBILE 분기 처리 하기 ( &amp; 각 디바이스마다 분기처리)","dateModified":"2016-02-01T00:00:00+09:00","datePublished":"2016-02-01T00:00:00+09:00","author":{"@type":"Person","name":"김광훈"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2016/02/01/Agent.html"},"description":"스크립트로 지금 접속하는 브라우저가 pc인지 모바일인지 구분을 할려면 navigator.userAgent 나 navigator.platform 으로 체크해서 분기 처리 해주면 된다. userAgent로 체크를 하게 되면 크롬같은 브라우저에서 개발자 툴로 agent 값을 모바일쪽으로 바꾸고 디버깅하면서 개발할 수 있지만 platform으로 체크하면 브라우저에서 디버깅하면서 개발하기 어렵다. 먼저 platform 으로 체크 했을때 코드는 다음과 같다 &lt;script type=&quot;text/javascript&quot;&gt;var filter = &quot;win16|win32|win64|mac|Mac&quot;;if( navigator.platform &amp;&amp; &#39;&#39; != &#39;Y&#39;){ if( filter.indexOf(navigator.platform.toLowerCase())&lt;0 ){ alert(&#39;플랫폼 기반 기기체크 : MOBILE 접속중&#39;); }else{ alert(&#39;플랫폼 기반 기기체크 : PC 접속중&#39;); }}&lt;/script&gt; userAgent로 체크했을때는 다음과 같다. &lt;script type=&quot;text/javascript&quot;&gt;var agent = navigator.userAgent;if (agent.match(/iPhone|iPod|iPad|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || agent.match(/LG|SAMSUNG|Samsung/) != null) { alert(&#39;agent 기반 기기체크 : MOBILE 접속중&#39;);} else { alert(&#39;agent 기반 기기체크 : PC 접속중&#39;);}&lt;/script&gt; 각 기기로 체크를 하려면 agent를 알럿값으로 찍어보고 상단코드처럼 if 문으로 해당 agent값을 매칭시켜서 그 값만 다르게 처리하면 된다. 예를 들어 ‘앱다운받기’ 라는 버튼을 안드로이드에서 누르면 구글로, 아이폰으로 누르면 앱스토어로 가게 하려면 &lt;script type=&quot;text/javascript&quot;&gt;var agent = navigator.userAgent;if (agent.match(/iPhone|iPod|iPad/i) != null) { //아이폰 document.write(&#39;&lt;a href=&quot;앱스토어URL&quot;&gt;앱다운받기&lt;/a&gt;&#39;);} else { //안드로이드 document.write(&#39;&lt;a href=&quot;구글URL&quot;&gt;앱다운받기&lt;/a&gt;&#39;);}&lt;/script&gt; 식으로 분기처리해서 버튼을 보여줘도 된다.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+<header class="site-header">
+    <h1 class="logo">
+        <img src="/assets/img/logo.png" alt="Aloveu"/>
+    </h1>
+    <nav>
+        <ul class="navbar">
+            <li>
+                <a href="/profile" class="">PROFILE</a>
+            </li>
+            <li>
+                <a href="/" class="current">ARCHIVES</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<article class="site-content">
+    <h1>PC, MOBILE 분기 처리 하기 ( & 각 디바이스마다 분기처리)</h1>
+    <p>01 Feb 2016 - 김광훈</p>
+
+    <div class="entry-content">
+    <p>스크립트로 지금 접속하는 브라우저가 pc인지 모바일인지 구분을 할려면 navigator.userAgent 나 navigator.platform  으로 체크해서 분기 처리 해주면 된다.  </p>
+    <p><span id="more-1190"></span></p>
+    <p>userAgent로 체크를 하게 되면 크롬같은 브라우저에서 개발자 툴로 agent 값을 모바일쪽으로 바꾸고 디버깅하면서 개발할 수 있지만 platform으로 체크하면 브라우저에서 디버깅하면서 개발하기 어렵다.</p>
+    <p>먼저 <a href="/demo/platform.html" title="demo 보기">platform 으로 체크</a> 했을때 코드는 다음과 같다</p>
+    <pre class="html cH_kip"><ol><li class="odd"><span><b class="meta">&lt;</b><a href="http://tranbot.net/html5/scripting-1.html#script" class="meta">script</a> type="text/javascript"<b class="meta">&gt;</b></span></li><li class="even"><span></span></li><li class="odd"><span><b class="js">var</b> filter = <b class="jsString">"win16|win32|win64|mac|Mac"</b>;</span></li><li class="even"><span></span></li><li class="odd fifth"><span><b class="js">if</b>( navigator.platform  &amp;&amp; <b class="jsString">''</b> != <b class="jsString">'Y'</b>){</span></li><li class="even"><span>    <b class="js">if</b>( filter.indexOf(navigator.platform.toLowerCase())&lt;0  ){</span></li><li class="odd"><span>    	alert(<b class="jsString">'플랫폼 기반 기기체크 : MOBILE 접속중'</b>);       </span></li><li class="even"><span>    }<b class="js">else</b>{</span></li><li class="odd"><span>    	alert(<b class="jsString">'플랫폼 기반 기기체크 : PC 접속중'</b>);</span></li><li class="even fifth"><span>    }</span></li><li class="odd"><span>}</span></li><li class="even"><span></span></li><li class="odd"><span><b class="meta">&lt;/script</b><b class="meta">&gt;</b></span></li></ol></pre>
+    <p><a href="/demo/agent.html" title="demo 보기">userAgent로 체크</a>했을때는 다음과 같다.</p>
+    <pre class="html cH_kip"><ol><li class="odd"><span><b class="meta">&lt;</b><a href="http://tranbot.net/html5/scripting-1.html#script" class="meta">script</a> type="text/javascript"<b class="meta">&gt;</b></span></li><li class="even"><span></span></li><li class="odd"><span><b class="js">var</b> agent = navigator.userAgent;</span></li><li class="even"><span></span></li><li class="odd fifth"><span><b class="js">if</b> (agent.match(/iPhone|iPod|iPad|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != <b class="js">null</b> || agent.match(/LG|SAMSUNG|Samsung/) != <b class="js">null</b>) {</span></li><li class="even"><span>    	alert(<b class="jsString">'agent 기반 기기체크 : MOBILE 접속중'</b>);</span></li><li class="odd"><span>} <b class="js">else</b> {</span></li><li class="even"><span>    	alert(<b class="jsString">'agent 기반 기기체크 : PC 접속중'</b>);</span></li><li class="odd"><span>}</span></li><li class="even fifth"><span><b class="meta">&lt;/script</b><b class="meta">&gt;</b></span></li></ol></pre>
+    <p>각 기기로 체크를 하려면 agent를 알럿값으로 찍어보고 상단코드처럼 if 문으로 해당 agent값을 매칭시켜서 그 값만 다르게 처리하면 된다.</p>
+    <p>예를 들어 ‘앱다운받기’ 라는 버튼을 안드로이드에서 누르면 구글로, 아이폰으로 누르면 앱스토어로 가게 하려면</p>
+    <pre class="html cH_kip"><ol><li class="odd"><span><b class="meta">&lt;</b><a href="http://tranbot.net/html5/scripting-1.html#script" class="meta">script</a> type="text/javascript"<b class="meta">&gt;</b></span></li><li class="even"><span></span></li><li class="odd"><span><b class="js">var</b> agent = navigator.userAgent;</span></li><li class="even"><span></span></li><li class="odd fifth"><span><b class="js">if</b> (agent.match(/iPhone|iPod|iPad/i) != <b class="js">null</b>) {</span></li><li class="even"><span>	<b class="comment">//아이폰</b></span></li><li class="odd"><span>	document.write(<b class="jsString">'&lt;a href="앱스토어URL"&gt;앱다운받기&lt;/a&gt;'</b>);</span></li><li class="even"><span>} <b class="js">else</b> {</span></li><li class="odd"><span>	<b class="comment">//안드로이드</b></span></li><li class="even fifth"><span>	document.write(<b class="jsString">'&lt;a href="구글URL"&gt;앱다운받기&lt;/a&gt;'</b>);</span></li><li class="odd"><span>}</span></li><li class="even"><span><b class="meta">&lt;/script</b><b class="meta">&gt;</b></span></li></ol></pre>
+    <p>식으로 분기처리해서 버튼을 보여줘도 된다.</p>
+</div>
+
+</article>
+
+<div class="pagination">
+    
+    <a href="/2015/11/13/mobileDeviceMotion.html" class="prev-post">모바일 자이로센서 확인</a>
+    
+    
+    
+    <a href="/2017/02/21/svg.html" class="next-post">svg text</a>
+    
+</div>
+<footer class="site-footer">
+    <ul class="sns-group">
+        <li><a href="https://www.instagram.com/aloveuu/?hl=ko">instagram</a></li>
+        <li><a href="https://web.facebook.com/YooWorl">facebook</a></li>
+    </ul>
+
+    <p class="copyright">© 2020.11. by ALOVEU</p>
+</footer>
+</body>
+</html>

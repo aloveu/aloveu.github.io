@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>YouTube JavaScript Player API with iframe</title>
+
+<style>
+	* { box-sizing: border-box}
+	body{font-family:Verdana, Geneva, sans-serif;font-size:11px; margin: 0; padding: 0}
+	a:hover {color: #007DF8;cursor: pointer;}
+	a{color: #0E7FCA; text-decoration: underline;}
+</style>
+
+<script type="text/javascript" src="http://www.youtube.com/player_api"></script>
+
+<script>	
+	//create the player object
+	var player = {};
+
+	function onStateChange(e){
+		console.log(e);
+	}
+	//add functions to player on ready
+	function onYouTubeIframeAPIReady() {
+		player = new YT.Player('ytcplayer1',{
+			events:{
+				'onStateChange':onStateChange
+			}
+		});
+	}
+</script>
+
+</head>
+<body>
+	<iframe id="ytcplayer1" type="text/html" width="570" height="321" src="http://www.youtube.com/embed/6lNKrFeARzc?&amp;autoplay=0&amp;theme=dark&amp;enablejsapi=1" frameborder="0"></iframe>
+
+	<p class="controls">
+		<a href="javascript: player.playVideo();">Play</a>
+		<a href="javascript: player.pauseVideo();">Pause</a>
+		<a href="javascript: player.stopVideo();">Stop</a>
+	</p>
+
+</body>
+</html>

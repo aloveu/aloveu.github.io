@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>touch & 마우스드래그 로 사진 컨트롤</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<style type="text/css">
+*{border:none;margin:0;padding:0;}
+html,body{width:100%;height:100%;}
+#pic_area{position:relative;width:100%;height:100%;}
+#movArea{position:absolute;top:0;left:0;transform-origin:50% 50%;}
+.ico{position:absolute;}
+.rotate{right:-45px;top:50%;margin-top:-40px;}
+.scale{right:-45px;bottom:-40px;}
+</style>
+<body>
+</form>
+			<!-- 사진 컨트롤 영역 s -->
+			<div id="pic_area">
+				<div id="movArea">
+					<img src="images/1.gif" alt="설현" />
+				</div>
+			</div>
+
+
+<script type="text/javascript">
+
+/* 클릭이벤트체크 */
+var getPointerEvent = function(event) {
+    return event.originalEvent.targetTouches ? event.originalEvent.targetTouches[0] : event;
+};
+
+//좌표콜백함수
+var scale_per = 1;
+var rorate_per = 0;
+function calb_data(){
+	var x = $mov_area.position().left;
+	var y = $mov_area.position().top;
+	x = x.toFixed(0);
+	y = y.toFixed(0);	
+	return x+"|"+y+"|"+scale_per+"|"+rorate_per;
+}
+// 이미지 이동
+var $pic_area = $('#pic_area');
+var $mov_area = $('#movArea');
+var $mov_img = $('#movArea > img');
+var $ico = $('.ico');
+var $scale = $('.scale');
+var $rotate = $('.rotate');
+var $this = $(this);
+var $mov_img_ow = $mov_img.width();
+var $mov_img_w = $mov_img.width();
+var $mov_img_h = $mov_img.height();
+		
+	//확대축소
+	$scale
+		.on( 'mousedown touchstart', function( event ){
+			var pointer = getPointerEvent(event);
+			var scale_x = pointer.pageX;
+			$this.on( 'mousemove touchmove', function(event){
+				event.preventDefault();
+				pointer3 = getPointerEvent(event);
+				scale_w = $mov_img_w + pointer3.pageX - scale_x;
+				scale_per = scale_w/$mov_img_ow;
+				//$mov_area.css('transform','scale('+scale_per+','+scale_per+')');
+				$mov_img.width(scale_w);
+			});
+
+			$this.on( 'mouseup touchend', function(event){
+				$mov_img_w = $mov_img.width();
+				$mov_img_h = $mov_img.height();
+				$this.off( 'mousemove touchmove' );
+				$this.off( 'mousedown touchstart' );
+			});
+			return false;
+		});
+
+
+	//회전
+	$rotate
+		.on( 'mousedown touchstart', function( event ){
+			var pointer = getPointerEvent(event);
+			var rotate_x = pointer.pageX;
+			var rotate_l = $mov_area.position().left;
+			var rotate_y = pointer.pageY;
+			var rotate_t = $mov_area.position().top;
+
+			$this.on( 'mousemove touchmove', function(event){
+				event.preventDefault();
+				pointer2 = getPointerEvent(event);
+				//console.log($mov_img_w);
+				_x = pointer2.pageX - (rotate_l + $mov_img_w/2);
+				_y = pointer2.pageY - (rotate_t + $mov_img_h/2);
+		        Rad2Deg = (360 / (Math.PI * 2));
+				if(_x > 0){
+					rorate_per = (Math.atan(_y/_x) * Rad2Deg);
+		        }else{
+					rorate_per = (Math.atan(_y/_x) * Rad2Deg) + 180;
+		        }
+				$mov_area.css('transform','rotate('+rorate_per+'deg)');
+			});
+
+			$this.on( 'mouseup touchend', function(event){
+				$this.off( 'mousemove touchmove' );
+				$this.off( 'mousedown touchstart' );
+			});
+			return false;
+		});
+	//이동
+	$pic_area
+		.on( 'mousedown touchstart', function( event ){
+			var pointer = getPointerEvent(event);
+			var spx = pointer.pageX;
+			var scx = $mov_area.position().left;
+			var spy = pointer.pageY;
+			var scy = $mov_area.position().top;
+			if(rorate_per !=0){
+				scx = parseInt($mov_area.css('left'));
+				scy = parseInt($mov_area.css('top'));
+			}
+			var t2x,t2y;
+			$this.on( 'mousemove touchmove', function(event){
+				event.preventDefault();
+				pointer2 = getPointerEvent(event);
+				t2x = scx + pointer2.pageX - spx;
+				t2y = scy + pointer2.pageY - spy;
+				$mov_area.css({left : t2x, top : t2y});
+			});
+
+			$this.on( 'mouseup touchend', function(event){
+				$this.off( 'mousemove touchmove' );
+				$this.off( 'mousedown touchstart' );
+			});
+		});
+
+</script>
+</body>
+</html>  

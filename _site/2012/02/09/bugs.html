@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>크로스 브라우징 할때의 브라우저별 버그들! | Aloveu</title>
+    <link rel="icon" href="http://localhost:4000/assets/img/favicon.ico" type="image/gif" sizes="16x16" />
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Aloveu || Archives" />
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>크로스 브라우징 할때의 브라우저별 버그들! | Aloveu   Archives</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="크로스 브라우징 할때의 브라우저별 버그들!" />
+<meta name="author" content="김광훈" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="버그도 있고 브라우저 타는 속성들도 있고..생각 나는대로 주저리주저리 써 놔야겠다. float의 방향과 같은쪽으로 margin을 주면 ie6에서는 더블마진이 발생한다. – 아예 다른방향으로 마진을 주는게 정답이지만..해결방법은 float부분에 display:inline;을 쓴다. ie6에서 position:relative;가 홀수일때 absolute한 놈의 마지막 가장자리 1px이 늘어난다. – relative를 짝수로 쓴다 =ㅁ=; ie6의 문자 중복 버그. 연속으로 float된 놈 사이에 display:none;이나 input type=”hidden”이나 주석 등이 포함 되면 문자의 끝부분이 반복되는 버그. – 숨겨진놈 전의 float부분에 display:inline;을 쓴다. ie는 haslayout이라는걸 갖는다. – 항상해제하는 법을 기르자! 해제하는 법은 하단에 기술 하겠다. ie6~7에서 특정 요소가 안보인다거나 의도한대로 표현이 안된다면 *zoom:1을 추가 해보고 그래도 안되면 position:relative를 추가해보자 ie6에서는 다중선택자가 지원이 안된다. 무슨말인고 하니 한개의 엘리먼트에 class가 두개이상(다중선택자의 마지막 class만 적용)라던가 id랑 class가 겹쳤다거나 할때(첫번째 조합만 처리함)다. – 애초에 겹치지 않게 코딩 ie6~7에서는 button,input에 가변적인 텍스트를 넣었을때 좌우 패딩이 늘어나는 버그. – overflow:visible ie6에서 png파일을 쓸때 투명부분이 표현 안된다. – 흔히 쓰는 방법으로 tmp:expression 로 스크립트 처리를 한다든지 DD_belatedPNG같은 다른 js를 쓴다든지 하면된다. 해당링크 ie6이하 에서는 숨은 이미지나 또는 흔히 사용하는 :hover으로 배경이미지를 바꾸면서 마우스오버 효과를 줄때 깜빡깜빡 거리면서 바뀌는걸 볼 수있다. 이건 캐시에서 불러오지 않고 서버측에 다시 요청하게 됨으로 생기는 버그다. – try {document.execCommand(&#39;BackgroundImageCache&#39;, false, true);} catch(e) {} 스크립트에 추가하면된다. 물론 ie전용이다. =ㅁ=; 그리 많이 쓰진 않지만 firefox에서만 text-indent를 쓴 엘리먼트에 :before속성으로 내용을 넣으면 이 :before속성 자체에도 text-indent가 먹어버린다. 이 홈페이지 aside부분 작업하다가 발견했다.=ㅁ= – :before속성을 피해 상위엘리먼트나 하위엘리먼트에 text-indent를 넣어 동일하게 표현하자! LG V30 input maxlength 가 안먹는 이슈가 있다. 스크립트로 자리 계산해서 막아야함 input에 keydown이나 keyup에서 강제로 value를 바꾸는 경우 특정 모바일 디바이스에서 입력값이 두번씩 붙은 &#39;12345&#39;입력시 &#39;1234512345&#39;로 입력됨. 모바일에서 숫자키패드 이슈때문에 input type을 number나 tel로 지정을 하는데 tel은 아이폰 안드 둘다 숫자캐패드가 올라오고 number는 아이폰에서 키보드 형태의 자판 으로 올라오는 대신에 위에 숫자가 있는 키패드로 올라온다. 가격 관련 input을 지정할때는 천단위 콤마(,)가 number에서는 허용하지 않고 tel은 소수점을 키패드에 표현하지 않는 디바이스들이 있어서 number를 쓰는걸 추천하고 따로 인풋관련 처리를 해야한다." />
+<meta property="og:description" content="버그도 있고 브라우저 타는 속성들도 있고..생각 나는대로 주저리주저리 써 놔야겠다. float의 방향과 같은쪽으로 margin을 주면 ie6에서는 더블마진이 발생한다. – 아예 다른방향으로 마진을 주는게 정답이지만..해결방법은 float부분에 display:inline;을 쓴다. ie6에서 position:relative;가 홀수일때 absolute한 놈의 마지막 가장자리 1px이 늘어난다. – relative를 짝수로 쓴다 =ㅁ=; ie6의 문자 중복 버그. 연속으로 float된 놈 사이에 display:none;이나 input type=”hidden”이나 주석 등이 포함 되면 문자의 끝부분이 반복되는 버그. – 숨겨진놈 전의 float부분에 display:inline;을 쓴다. ie는 haslayout이라는걸 갖는다. – 항상해제하는 법을 기르자! 해제하는 법은 하단에 기술 하겠다. ie6~7에서 특정 요소가 안보인다거나 의도한대로 표현이 안된다면 *zoom:1을 추가 해보고 그래도 안되면 position:relative를 추가해보자 ie6에서는 다중선택자가 지원이 안된다. 무슨말인고 하니 한개의 엘리먼트에 class가 두개이상(다중선택자의 마지막 class만 적용)라던가 id랑 class가 겹쳤다거나 할때(첫번째 조합만 처리함)다. – 애초에 겹치지 않게 코딩 ie6~7에서는 button,input에 가변적인 텍스트를 넣었을때 좌우 패딩이 늘어나는 버그. – overflow:visible ie6에서 png파일을 쓸때 투명부분이 표현 안된다. – 흔히 쓰는 방법으로 tmp:expression 로 스크립트 처리를 한다든지 DD_belatedPNG같은 다른 js를 쓴다든지 하면된다. 해당링크 ie6이하 에서는 숨은 이미지나 또는 흔히 사용하는 :hover으로 배경이미지를 바꾸면서 마우스오버 효과를 줄때 깜빡깜빡 거리면서 바뀌는걸 볼 수있다. 이건 캐시에서 불러오지 않고 서버측에 다시 요청하게 됨으로 생기는 버그다. – try {document.execCommand(&#39;BackgroundImageCache&#39;, false, true);} catch(e) {} 스크립트에 추가하면된다. 물론 ie전용이다. =ㅁ=; 그리 많이 쓰진 않지만 firefox에서만 text-indent를 쓴 엘리먼트에 :before속성으로 내용을 넣으면 이 :before속성 자체에도 text-indent가 먹어버린다. 이 홈페이지 aside부분 작업하다가 발견했다.=ㅁ= – :before속성을 피해 상위엘리먼트나 하위엘리먼트에 text-indent를 넣어 동일하게 표현하자! LG V30 input maxlength 가 안먹는 이슈가 있다. 스크립트로 자리 계산해서 막아야함 input에 keydown이나 keyup에서 강제로 value를 바꾸는 경우 특정 모바일 디바이스에서 입력값이 두번씩 붙은 &#39;12345&#39;입력시 &#39;1234512345&#39;로 입력됨. 모바일에서 숫자키패드 이슈때문에 input type을 number나 tel로 지정을 하는데 tel은 아이폰 안드 둘다 숫자캐패드가 올라오고 number는 아이폰에서 키보드 형태의 자판 으로 올라오는 대신에 위에 숫자가 있는 키패드로 올라온다. 가격 관련 input을 지정할때는 천단위 콤마(,)가 number에서는 허용하지 않고 tel은 소수점을 키패드에 표현하지 않는 디바이스들이 있어서 number를 쓰는걸 추천하고 따로 인풋관련 처리를 해야한다." />
+<link rel="canonical" href="http://localhost:4000/2012/02/09/bugs.html" />
+<meta property="og:url" content="http://localhost:4000/2012/02/09/bugs.html" />
+<meta property="og:site_name" content="Aloveu   Archives" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2012-02-09T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="크로스 브라우징 할때의 브라우저별 버그들!" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"http://localhost:4000/2012/02/09/bugs.html","headline":"크로스 브라우징 할때의 브라우저별 버그들!","dateModified":"2012-02-09T00:00:00+09:00","datePublished":"2012-02-09T00:00:00+09:00","author":{"@type":"Person","name":"김광훈"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2012/02/09/bugs.html"},"description":"버그도 있고 브라우저 타는 속성들도 있고..생각 나는대로 주저리주저리 써 놔야겠다. float의 방향과 같은쪽으로 margin을 주면 ie6에서는 더블마진이 발생한다. – 아예 다른방향으로 마진을 주는게 정답이지만..해결방법은 float부분에 display:inline;을 쓴다. ie6에서 position:relative;가 홀수일때 absolute한 놈의 마지막 가장자리 1px이 늘어난다. – relative를 짝수로 쓴다 =ㅁ=; ie6의 문자 중복 버그. 연속으로 float된 놈 사이에 display:none;이나 input type=”hidden”이나 주석 등이 포함 되면 문자의 끝부분이 반복되는 버그. – 숨겨진놈 전의 float부분에 display:inline;을 쓴다. ie는 haslayout이라는걸 갖는다. – 항상해제하는 법을 기르자! 해제하는 법은 하단에 기술 하겠다. ie6~7에서 특정 요소가 안보인다거나 의도한대로 표현이 안된다면 *zoom:1을 추가 해보고 그래도 안되면 position:relative를 추가해보자 ie6에서는 다중선택자가 지원이 안된다. 무슨말인고 하니 한개의 엘리먼트에 class가 두개이상(다중선택자의 마지막 class만 적용)라던가 id랑 class가 겹쳤다거나 할때(첫번째 조합만 처리함)다. – 애초에 겹치지 않게 코딩 ie6~7에서는 button,input에 가변적인 텍스트를 넣었을때 좌우 패딩이 늘어나는 버그. – overflow:visible ie6에서 png파일을 쓸때 투명부분이 표현 안된다. – 흔히 쓰는 방법으로 tmp:expression 로 스크립트 처리를 한다든지 DD_belatedPNG같은 다른 js를 쓴다든지 하면된다. 해당링크 ie6이하 에서는 숨은 이미지나 또는 흔히 사용하는 :hover으로 배경이미지를 바꾸면서 마우스오버 효과를 줄때 깜빡깜빡 거리면서 바뀌는걸 볼 수있다. 이건 캐시에서 불러오지 않고 서버측에 다시 요청하게 됨으로 생기는 버그다. – try {document.execCommand(&#39;BackgroundImageCache&#39;, false, true);} catch(e) {} 스크립트에 추가하면된다. 물론 ie전용이다. =ㅁ=; 그리 많이 쓰진 않지만 firefox에서만 text-indent를 쓴 엘리먼트에 :before속성으로 내용을 넣으면 이 :before속성 자체에도 text-indent가 먹어버린다. 이 홈페이지 aside부분 작업하다가 발견했다.=ㅁ= – :before속성을 피해 상위엘리먼트나 하위엘리먼트에 text-indent를 넣어 동일하게 표현하자! LG V30 input maxlength 가 안먹는 이슈가 있다. 스크립트로 자리 계산해서 막아야함 input에 keydown이나 keyup에서 강제로 value를 바꾸는 경우 특정 모바일 디바이스에서 입력값이 두번씩 붙은 &#39;12345&#39;입력시 &#39;1234512345&#39;로 입력됨. 모바일에서 숫자키패드 이슈때문에 input type을 number나 tel로 지정을 하는데 tel은 아이폰 안드 둘다 숫자캐패드가 올라오고 number는 아이폰에서 키보드 형태의 자판 으로 올라오는 대신에 위에 숫자가 있는 키패드로 올라온다. 가격 관련 input을 지정할때는 천단위 콤마(,)가 number에서는 허용하지 않고 tel은 소수점을 키패드에 표현하지 않는 디바이스들이 있어서 number를 쓰는걸 추천하고 따로 인풋관련 처리를 해야한다.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+<header class="site-header">
+    <h1 class="logo">
+        <img src="/assets/img/logo.png" alt="Aloveu"/>
+    </h1>
+    <nav>
+        <ul class="navbar">
+            <li>
+                <a href="/profile" class="">PROFILE</a>
+            </li>
+            <li>
+                <a href="/" class="current">ARCHIVES</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<article class="site-content">
+    <h1>크로스 브라우징 할때의 브라우저별 버그들!</h1>
+    <p>09 Feb 2012 - 김광훈</p>
+
+    <div class="entry-content">
+    <p>버그도 있고 브라우저 타는 속성들도 있고..생각 나는대로 주저리주저리 써 놔야겠다.</p>
+    <p><span id="more-106"></span></p>
+    <ol>
+        <li>float의 방향과 같은쪽으로 margin을 주면 ie6에서는 더블마진이 발생한다. – <strong class="impt2">아예 다른방향으로 마진을 주는게 정답이지만..해결방법은 float부분에 display:inline;을 쓴다.</strong></li>
+        <li>ie6에서 position:relative;가 홀수일때 absolute한 놈의 마지막 가장자리 1px이 늘어난다. – <strong class="impt2">relative를 짝수로 쓴다 =ㅁ=;</strong></li>
+        <li>ie6의 문자 중복 버그. 연속으로 float된 놈 사이에 display:none;이나 input type=”hidden”이나 주석 등이 포함 되면 문자의 끝부분이 반복되는 버그. – <strong class="impt2">숨겨진놈 전의 float부분에 display:inline;을 쓴다.</strong></li>
+        <li>ie는 haslayout이라는걸 갖는다.   – <strong class="impt2">항상해제하는 법을 기르자!  해제하는 법은 하단에 기술 하겠다. ie6~7에서 특정 요소가 안보인다거나 의도한대로 표현이 안된다면 *zoom:1을 추가 해보고 그래도 안되면 position:relative를 추가해보자</strong></li>
+        <li>ie6에서는 다중선택자가 지원이 안된다. 무슨말인고 하니 한개의 엘리먼트에 class가 두개이상(다중선택자의 마지막 class만 적용)라던가 id랑 class가 겹쳤다거나 할때(첫번째 조합만 처리함)다. – <strong class="impt2">애초에 겹치지 않게 코딩</strong></li>
+        <li>ie6~7에서는 button,input에 가변적인 텍스트를 넣었을때 좌우 패딩이 늘어나는 버그. – <strong class="impt2">overflow:visible</strong></li>
+        <li>ie6에서 png파일을 쓸때 투명부분이 표현 안된다. – <strong class="impt2">흔히 쓰는 방법으로  tmp:expression 로 스크립트 처리를 한다든지 DD_belatedPNG같은 다른 js를 쓴다든지 하면된다. <a href="http://kyouyoum.cafe24.com/?p=38">해당링크</a></strong></li>
+        <li>ie6이하 에서는 숨은 이미지나 또는 흔히 사용하는 :hover으로 배경이미지를 바꾸면서 마우스오버 효과를 줄때 깜빡깜빡 거리면서 바뀌는걸 볼 수있다. 이건 캐시에서 불러오지 않고 서버측에 다시 요청하게 됨으로 생기는 버그다. – <strong class="impt2">try {document.execCommand('BackgroundImageCache', false, true);} catch(e) {} 스크립트에 추가하면된다. 물론 ie전용이다. =ㅁ=;</strong></li>
+        <li>그리 많이 쓰진 않지만 firefox에서만 text-indent를 쓴 엘리먼트에 :before속성으로 내용을 넣으면 이 :before속성 자체에도 text-indent가 먹어버린다. 이 홈페이지 aside부분 작업하다가 발견했다.=ㅁ= – <strong class="impt2">:before속성을 피해 상위엘리먼트나 하위엘리먼트에 text-indent를 넣어 동일하게 표현하자!</strong></li>
+        <li>LG V30 input maxlength 가 안먹는 이슈가 있다. 스크립트로 자리 계산해서 막아야함</li>
+        <li>input에 keydown이나 keyup에서 강제로 value를 바꾸는 경우 특정 모바일 디바이스에서 입력값이 두번씩 붙은 '12345'입력시 '1234512345'로 입력됨. </li>
+        <li>모바일에서 숫자키패드 이슈때문에 input type을 number나 tel로 지정을 하는데 tel은 아이폰 안드 둘다 숫자캐패드가 올라오고 number는 아이폰에서 키보드 형태의 자판 으로 올라오는 대신에 위에 숫자가 있는 키패드로 올라온다. 가격 관련 input을 지정할때는 천단위 콤마(,)가 number에서는 허용하지 않고 tel은 소수점을 키패드에 표현하지 않는 디바이스들이 있어서 number를 쓰는걸 추천하고 따로 인풋관련 처리를 해야한다.</li>
+    </ol>
+</div>
+
+</article>
+
+<div class="pagination">
+    
+    <a href="/2012/02/01/outlink.html" class="prev-post">모바일 웹 링크 클릭시 테두리 없애기(안드로이드 레이어팝업 링크)</a>
+    
+    
+    
+    <a href="/2012/02/09/table.html" class="next-post">테이블 안의 글자 자동 줄바꾸기</a>
+    
+</div>
+<footer class="site-footer">
+    <ul class="sns-group">
+        <li><a href="https://www.instagram.com/aloveuu/?hl=ko">instagram</a></li>
+        <li><a href="https://web.facebook.com/YooWorl">facebook</a></li>
+    </ul>
+
+    <p class="copyright">© 2020.11. by ALOVEU</p>
+</footer>
+</body>
+</html>

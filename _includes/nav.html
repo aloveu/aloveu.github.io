@@ -1,7 +1,0 @@
-<nav>
-    <ul>
-    {% for item in site.urls %}
-        <li><a href="{{ item.url }}" {% if page.url == item.url %}class="current"{% endif %}>{{ item.name }}</a></li>
-    {% endfor %}
-    </ul>
-</nav>
