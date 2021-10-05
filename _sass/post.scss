@@ -1,72 +1,88 @@
 /* profile */
-.profile{
-    h2{
-        position: relative;
-        padding-bottom: 5px;
-        margin: 25px 0;
-        font-size: 20px;
-        border-bottom: 1px solid #ddd;
-        strong{
-            position: absolute;
-            top: 13px;
-            right: 0;
-            margin: 0;
-            font-size: 15px;
-        }
-    }
-    dt {
-        float: left;
-        font-weight: bold;
-        text-align: right;
-        width: 7em;
-    }
-    dd {
-        margin: 0 0 0 8em;
-    }
+.profile {
+	h2 {
+		position: relative;
+		padding-bottom: 5px;
+		margin: 25px 0;
+		font-size: 20px;
+		border-bottom: 1px solid #ddd;
 
-    a:link,
-    a:visited {
-        text-decoration: underline;
-    }
+		strong {
+			position: absolute;
+			top: 13px;
+			right: 0;
+			margin: 0;
+			font-size: 15px;
+		}
+	}
+
+	dt {
+		float: left;
+		font-weight: bold;
+		text-align: right;
+		width: 7em;
+	}
+
+	dd {
+		margin: 0 0 0 8em;
+	}
+
+	a:link,
+	a:visited {
+		text-decoration: underline;
+	}
 }
 
-.post-list{
-    padding: 0;
-    list-style: none;
-    li{
-        padding: $d-l 0;
-        border-bottom:1px solid $p-border-color;
-        .post-tit{
-            margin: 0;
-            padding: 0;
-            font-size: 24px;
-        }
-        .tagGroup{
-            .btnTag{
-                display: inline-block;
-                padding: 2px 5px;
-                border:1px solid rgba(27,31,35,.15);
-                border-radius: 3px;
-                color: $white;
-                font-size: 12px;
-                line-height: 1;
-                white-space: nowrap;
-                vertical-align: middle;
-                cursor: pointer;
-                background: #2ea44f;
-            }
-        }
-        .meta{
-            .date{
-                margin-bottom: 0;
-                font-size: 14px;
-            }
-        }
-    }
+.post-list {
+	padding: 0;
+	list-style: none;
+
+	li {
+		padding: $d-l 0;
+		border-bottom: 1px solid $p-border-color;
+
+		.post-tit {
+			margin: 0;
+			padding: 0;
+			font-size: 24px;
+		}
+
+		.tagGroup {
+			.btnTag {
+				display: inline-block;
+				padding: 2px 5px;
+				border: 1px solid rgba(27, 31, 35, .15);
+				border-radius: 3px;
+				color: $white;
+				font-size: 12px;
+				line-height: 1;
+				white-space: nowrap;
+				vertical-align: middle;
+				cursor: pointer;
+				background: #2ea44f;
+			}
+		}
+
+		.meta {
+			.date {
+				margin-bottom: 0;
+				font-size: 14px;
+			}
+		}
+	}
 }
 
-.site-content{
-    h1{
+.site-content {
+	h1 {
 
-    }
+	}
+
+	pre {
+		&.html {
+			color: #ddd;
+			background-color:#1b2426;
+			padding:24px;
+			border-radius:12px;
+		}
+	}
 }
