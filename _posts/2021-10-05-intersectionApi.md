@@ -1,7 +1,11 @@
 ---
-layout: post title: "엘리먼트(영역)가 화면에 보이는지 확인하는 법"
+layout: post 
+title: "엘리먼트(영역)가 화면에 보이는지 확인하는 법"
 subtitle:
-cover-img: /assets/img/path.jpg thumbnail-img: /assets/img/thumb.png share-img: /assets/img/path.jpg tags: [css]
+cover-img: /assets/img/path.jpg 
+thumbnail-img: /assets/img/thumb.png 
+share-img: /assets/img/path.jpg 
+tags: [css]
 ---
 <p>페이지가 스크롤 되는 도중에 내가 원하는 컨텐츠가 화면에 보였을때 콜백을 처리 하려면 IntersectionObserver API 를 사용 하면 된다.</p>
 <!--more-->
