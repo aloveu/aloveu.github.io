@@ -13,16 +13,17 @@ title: Profile
         <dt>사는곳</dt>
         <dd>{{site.author_location}}</dd>
         <dt>직업</dt>
-        <dd>웹 퍼블리셔</dd>
+        <dd>프론트엔드 개발자</dd>
         <dt>직장</dt>
-        <dd><a title="새창" href="https://www.bithumb.com/" target="_blank" rel="noopener noreferrer">BITHUMB</a> 웹서비스개발팀</dd>
+        <dd><a title="새창" href="http://socialbean.co.kr/" target="_blank" rel="noopener noreferrer">소셜빈</a> 플랫폼개발1팀</dd>
         <dt>E-mail</dt>
         <dd>{{site.author_email}}</dd>
     </dl>
 
     <h2>개인이력</h2>
     <ul>
-        <li>2017년 10월 30일 ~ 빗썸 재직중</li>
+        <li>2021년 01월 18일 ~ 재직중 (주) 소셜빈</li>
+        <li>2017년 10월 30일 ~ 2021년 1월 15일 (주) 빗썸</li>
         <li>2016년 12월 20일 ~ 2017년 10월 27일 (주) NSUSLAB</li>
         <li>2011년 7월 18일~ 2016년 9월30일 (주)포스트비쥬얼 근무</li>
         <li>2009년 6월 ~ 2011년 6월 (주)위치스 근무</li>
@@ -30,7 +31,12 @@ title: Profile
     
     <h2>참여프로젝트<strong class="impt2">*표시는 전체퍼블리싱</strong></h2>
     <ul>
-        <li>2017.10~ 빗썸 프론트앤드 서비스 개발 (차트, 웹소켓, 스테이킹, 예치, 렌딩, 메인, 거래..)</li>
+        <li>2021) 소셜빈 핫트샵 webpack + vue 전환 프로젝트</li>
+        <li>2017 ~ 2021) 빗썸 운영 유지보수 업무</li>
+        <li>2020) 빗썸 공시, 예치, 스테이킹, 렌딩 서비스 프론트 개발</li>
+        <li>2019) 빗썸 개편</li>
+        <li>2018) 빗썸 웹소켓 적용 (기존 폴링 > 웹소켓 전환)</li>
+        <li>2017) 빗썸 차트 개편 (하이차트 > 트레이딩뷰)</li>
         <li>2017) HTML5 게임 프로토타입 작성 &amp; UI/UX 개발</li>
         <li>2016) NIKE UNLIMITED</li>
         <li>2016) 이니스프리 행키시네마</li>
