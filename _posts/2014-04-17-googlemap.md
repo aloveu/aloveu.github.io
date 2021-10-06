@@ -5,7 +5,7 @@ subtitle:
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
-tags: [css, script, webstandatds]
+tags: [css, js, webstandards]
 ---
 <div class="entry-content">
     <p>구글맵에 지도 api를 활용하다가 새로 알게된 사실<br>

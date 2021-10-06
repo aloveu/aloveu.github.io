@@ -5,7 +5,7 @@ subtitle:
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
-tags: [javascript, instagram]
+tags: [js, instagram]
 ---
 <div class="entry-content">
     <p>인스타 피드 적용을 하다 보니 ie8쪽에서 에러가 난다.<br>

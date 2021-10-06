@@ -5,7 +5,7 @@ subtitle:
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
-tags: [css, script, webstandatds]
+tags: [css, js, webstandards]
 ---
 <div class="entry-content">
     <p>html5 placeholder를 사용하면 스크립트로 그부분 안짜도 되서 참 간단하게 처리 된다. 가끔 이 placeholer 부분도 스타일을 먹이고 싶을때가 있는데 알아보자<span id="more-800"></span></p>

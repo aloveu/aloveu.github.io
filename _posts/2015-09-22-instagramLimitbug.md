@@ -5,7 +5,7 @@ subtitle:
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
-tags: [instagram, script]
+tags: [instagram, js]
 ---
 <div class="entry-content">
     <p>인스타그램 피드로 데이터를 불러오다 보면 limit는 최대 60개까지 불러올 수 있는데 33개 이후로 불러와 지지 않는 경우가 있다.<br>

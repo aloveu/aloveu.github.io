@@ -13,7 +13,7 @@ title: Home
             <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
             <p class="tagGroup">
                 {% for tag in post.tags %}
-                <span title="{{ tag }}" class="btnTag tag-{{ tag }}">{{ tag }}</span>
+                <a href="/tags/#{{ tag }}" class="btnTag tag-{{ tag }}">{{ tag }}</a>
                 {% endfor %}
             </p>
             <div class="meta">

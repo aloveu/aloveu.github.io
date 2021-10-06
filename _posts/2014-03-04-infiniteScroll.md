@@ -5,7 +5,7 @@ subtitle:
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
-tags: [css, script, jquery]
+tags: [css, js, jquery]
 ---
 <div class="entry-content">
     <h2>Infinite scroll</h2>

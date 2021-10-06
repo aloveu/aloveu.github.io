@@ -5,7 +5,7 @@ subtitle:
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
-tags: [facebook, javascript]
+tags: [facebook, js]
 ---
 <div class="entry-content">
     <p>페이스북 타임라인의 글을 가져와 보자..해보니 페이지의 글은 불러오고 개인계정 타임라인 글은 못불러오는듯 하다<span id="more-822"></span><br>

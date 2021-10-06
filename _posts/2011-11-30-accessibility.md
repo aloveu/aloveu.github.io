@@ -5,7 +5,7 @@ subtitle:
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
-tags: [accessibility, webstandards, 웹접근성, 웹표준, 장애인]
+tags: [accessibility, webstandards]
 ---
 
 <div>

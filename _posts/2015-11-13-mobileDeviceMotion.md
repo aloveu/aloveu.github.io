@@ -5,7 +5,7 @@ subtitle:
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
-tags: [jquery, mobile, script]
+tags: [jquery, mobile, js]
 ---
 <div class="entry-content">
     <p>2014년경 뉴욕타임스퀘어 광장에서 자신의 모바일기기에 쓴 글을 휴대폰 던지는 모션을 취하면 전광판에 submit 되게 했던 <a href="/portfolio/82">프로젝트</a>였다. 아이폰 기능중에 input에 글을 쓰고 휴대폰을 흔들면 글쓰기 취소가 된다는 것을 깜빡하고 진행했던 프로젝트였는데 당시에 어떻게 아이폰도 같이 서브밋했는지 대응했던 방법이 기억이 나질 않는다 -_-; 어쨌든 잘 마무리 됐었던 프로젝트였다</p>

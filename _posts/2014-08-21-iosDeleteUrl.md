@@ -5,7 +5,7 @@ subtitle:
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
-tags: [css, script, webstandatds]
+tags: [css, js, webstandards]
 ---
 <div class="entry-content">
     <pre class="html cH_kip"><ol><li class="odd"><span><b class="meta">&lt;</b><a href="http://tranbot.net/html5/semantics.html#meta" class="meta">meta</a> name="viewport" content="width=device-width, minimal-ui"<b class="meta">&gt;</b></span></li></ol></pre>

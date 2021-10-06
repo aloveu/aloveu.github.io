@@ -5,7 +5,7 @@ subtitle:
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
-tags: [javascript, es6, vue, vuejs]
+tags: [js, es6, vue]
 ---
 <p>Vue Data(Object, Array) 업데이트를 했는데 화면이 바뀌지 않을 때 어떻게 처리해야하는지 ??</p>
 <!--more-->

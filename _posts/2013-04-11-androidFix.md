@@ -5,7 +5,7 @@ subtitle:
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
-tags: [mobile, script]
+tags: [mobile, js]
 ---
 <div class="entry-content">
     <p>이미지를 100%로 잡고 모든 수치를 %로 작업을 하는건 너무 고된 일이라 최근엔 가로 640으로 작업후 뷰포트로 조절을 하고 있다.</p>
