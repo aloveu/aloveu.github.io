@@ -2,7 +2,6 @@
 layout: default
 title: Home
 ---
-
 <article class="site-content">
     <ul class="post-list">
         {% for post in paginator.posts %}
@@ -27,7 +26,7 @@ title: Home
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
     {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+    <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev12</a>
     {% else %}
     <span>&laquo; Prev</span>
     {% endif %}

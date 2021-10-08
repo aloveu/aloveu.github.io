@@ -15,7 +15,7 @@ urls:
 
 # pagination of posts
 paginate: 7
-per_page: 7
+per_page: 10
 paginate_path: "/page/:num/"
 
 excerpt_separator: <!--more-->

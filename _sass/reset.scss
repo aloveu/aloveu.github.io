@@ -66,10 +66,10 @@ dfn {
 }
 
 hr {
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
+    border:0;
+    border-bottom:1px solid #000;
     height: 0;
+    margin: 16px 0;
 }
 
 mark {
@@ -195,3 +195,11 @@ html, body {
 * {
     box-sizing: border-box
 }
+
+.tableStyle01 {
+    width:100%; margin:0 auto; border-top: 2px solid #65BB28; color:#7c7c7c; border-left:1px solid #ddd;
+    th, td { padding: 5px 6px; border-right:1px solid #ddd; border-bottom:1px solid #ddd; }
+    th { color: #000; background: #f3f3f3; }
+    tr:hover { background:#f3f3f3; }
+}
+.ellipsis{width:200px;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow:hidden;white-space:nowrap; word-wrap:normal !important;}

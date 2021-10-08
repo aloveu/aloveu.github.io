@@ -11,7 +11,7 @@ tags: [css]
 <!--more-->
 <p>텍스트에 그라디언트를 적용 시키고, 이미지를 텍스트안에서만 bg로 처리 하고 거기에 반짝이는 효과까지 기술해보려고 한다.</p>
 <hr />
-<h2>background-clip:text</h2>
+## background-clip:text
 <p>먼저 background-clip을 사용해 볼거다. 현재 background-clip은 -webkit- 밴더프리픽스를 붙여서 사용을 하고 있다. 이건 Edge와 IE 계열을 지원하지 않는다.</p>
 <pre class="html">&lt;p class="text-clip clip-img"&gt;HELLO&lt;/&gt;
 &lt;p class="text-clip clip-gradient"&gt;HELLO&lt;/&gt;
@@ -50,5 +50,5 @@ tags: [css]
 </style>
 
 <p>이렇게 보면 svg가 background-clip:text보단 브라우저지원이 잘되서 더 좋아 보이지만 svg로 만들었을 때 문제점이 있다. text-overflow:ellipsis 가 먹지 않아서 ... 처리를 하려면 서버단에서 ... 처리 해서 내려줘야한다 ㅠㅠ</p>
-<h2>TEXT ANIMATION</h2>
+## TEXT ANIMATION
 ....
