@@ -56,3 +56,13 @@ Vue.filter('mmm_ddd', comma);
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<h2>필터 체이닝</h2>
+<p>필터는 체이닝 할 수 있습니다. 예를 들어 천단위 콤마를 찍고, 원(₩)표시를 하려고 하면 순서대로 적어주시면 됩니다.</p>
+<pre class="html">
+    price = 1000;
+    [[ price | comma | won ]]
+</pre>
+
+<h2>참고</h2>
+<a href="https://kr.vuejs.org/v2/guide/filters.html" target="_blank">kr.vuejs.org</a>
