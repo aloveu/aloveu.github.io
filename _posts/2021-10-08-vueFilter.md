@@ -43,10 +43,10 @@ Vue.filter('mmm_ddd', comma);
 </pre>
 
 <h3>4. 필터 사용</h3>
-<p>정의한 필터를 각 컴포넌트에서 사용할때는 해당 값 뒤에 {{ 값 | 필터명 }} 처럼 작성 하면 된다.</p>
+<p>정의한 필터를 각 컴포넌트에서 사용할때는 해당 값 뒤에 [[ 값 | 필터명 ]] 처럼 작성 하면 된다. ({}가 표현이 안돼 []로 표현)</p>
 <pre class="html">
     price = 1000;
-    {{ price | comma }}
+    [[ price | comma ]]
 </pre>
 
 <h2 class="text-clip clip-img">천단위 콤마</h2>
