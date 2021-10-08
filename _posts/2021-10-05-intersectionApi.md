@@ -32,5 +32,5 @@ function videoScrollHandler() {
 videoScrollHandler();
 </pre>
 
-<h2 class="text-clip clip-img">참고</h2>
+<h2>참고</h2>
 <a href="https://developer.mozilla.org/ko/docs/Web/API/Intersection_Observer_API" target="_blank">MDN</a>

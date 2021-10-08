@@ -11,7 +11,7 @@ tags: [css]
 <!--more-->
 <p>텍스트에 그라디언트를 적용 시키고, 이미지를 텍스트안에서만 bg로 처리 하고 거기에 반짝이는 효과까지 기술해보려고 한다.</p>
 <hr />
-<h2 class="text-clip clip-img">background-clip:text</h2>
+<h2>background-clip:text</h2>
 <p>먼저 background-clip을 사용해 볼거다. 현재 background-clip은 -webkit- 밴더프리픽스를 붙여서 사용을 하고 있다. 이건 Edge와 IE 계열을 지원하지 않는다.</p>
 <pre class="html">&lt;p class="text-clip clip-img"&gt;HELLO&lt;/&gt;
 &lt;p class="text-clip clip-gradient"&gt;HELLO&lt;/&gt;

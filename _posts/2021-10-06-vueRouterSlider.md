@@ -9,7 +9,7 @@ tags: [vue]
 ---
 <p>vue에서 router로 이동할때 swipe 효과 주려면 transition 과 router를 적절히 사용 해주 면 되는데 하나씩 알아보자</p>
 <!--more-->
-<h2 class="text-clip clip-img">router 설정</h2>
+<h2>router 설정</h2>
 <p>라우터 설정파일에서는 페이지가 이동 할 때마다 스와이프가 왼쪽으로 이동할 건지 오른쪽으로 이동할 건지 방향 알기 위해 meta 에 page index를 추가 해준다. </p>
 <p>예제에서는 page가 큰방향이면 좌=>우, 작은방향이면 우=>좌로 이동하게 만들 예정이다.</p>
 <pre class="html">
@@ -29,7 +29,7 @@ const routes = [
 ]
 </pre>
 
-<h2 class="text-clip clip-img">App.vue 설정</h2>
+<h2>App.vue 설정</h2>
 <ul>
     <li>router-view 컴포넌트를 transition으로 감싼다.</li>
     <li>transition에 name을 이전 router 파일에서 설정한 meta.page 값을 비교해 동적으로 변하게 작성한다.</li>
