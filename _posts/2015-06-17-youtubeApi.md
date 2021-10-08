@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "YOUTUBE IFRAME API로 유튜브영상 제어하기"
+title: "Js - YOUTUBE IFRAME API로 유튜브영상 제어하기"
 subtitle: 
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png

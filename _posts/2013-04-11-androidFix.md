@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[안드로이드] FIXED된 레이어 가로,세로 전환시 뷰포트 문제"
+title: "Js - 안드로이드 FIXED된 레이어 가로,세로 전환시 뷰포트 문제"
 subtitle: 
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png

@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "INFINITE SCROLL PLUGIN (스크롤 새로고침, 스크롤 로딩, 무한 스크롤)"
+title: "Js - INFINITE SCROLL PLUGIN (스크롤 새로고침, 스크롤 로딩, 무한 스크롤)"
 subtitle: 
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
-tags: [css, js, jquery]
+tags: [js, jquery]
 ---
 <div class="entry-content">
     <h2>Infinite scroll</h2>

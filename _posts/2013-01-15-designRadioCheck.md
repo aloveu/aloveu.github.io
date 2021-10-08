@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "체크박스, 라디오버튼 디자인 입히기"
+title: "Css - 체크박스, 라디오버튼 디자인 입히기"
 subtitle: 
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png

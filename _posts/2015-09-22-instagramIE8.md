@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "인스타그램피드 IE8이하 에러 해결"
+title: "Js - 인스타그램피드 IE8이하 에러 해결"
 subtitle: 
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png

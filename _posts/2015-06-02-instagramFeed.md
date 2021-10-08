@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "인스타그램 이미지 가져오기"
+title: "Js - 인스타그램 이미지 가져오기"
 subtitle: 
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png

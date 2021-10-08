@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "페이스북 글 가져오기"
+title: "Js - 페이스북 글 가져오기"
 subtitle: 
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png

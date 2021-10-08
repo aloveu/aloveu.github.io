@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "TEXT를 더 다양하게 꾸미기"
+title: "Css - TEXT를 더 다양하게 꾸미기"
 subtitle: 
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png

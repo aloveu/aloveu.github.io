@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Vue router 이동때 페이지 스와이프 효과 주기"
+title: "Vue - router 이동때 페이지 스와이프 효과 주기"
 subtitle:
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png

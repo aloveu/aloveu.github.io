@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SELECT박스 디자인 입히기"
+title: "Css - SELECT박스 디자인 입히기"
 subtitle: 
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png

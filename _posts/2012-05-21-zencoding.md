@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "코딩을 좀 더 빠르게.. ZEN CODING 을 알아보자"
+title: "잡담 - 코딩을 좀 더 빠르게.. ZEN CODING 을 알아보자"
 subtitle: 
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
-tags: [zencoding]
+tags: [chat, zencoding]
 ---
 <div class="entry-content">
 <p>얼마전부터 EditPlus가 3.40버전으로 업데이트 되면서 Zen Coding을 지원 하게 됐다.</p>

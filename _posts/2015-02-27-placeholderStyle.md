@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTML5 PLACEHOLDER 색,줄바꿈"
+title: "Css - HTML5 PLACEHOLDER 색,줄바꿈"
 subtitle: 
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png

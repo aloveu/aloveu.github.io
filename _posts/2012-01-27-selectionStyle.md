@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "마우스로 드래그했을때 색 바꾸기 (셀렉션)"
+title: "Css - 마우스로 드래그했을때 색 바꾸기 (셀렉션)"
 subtitle: 
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png

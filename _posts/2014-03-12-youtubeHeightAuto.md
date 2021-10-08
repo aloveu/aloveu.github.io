@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "유튜브 영상 가로 100%로 설정했을때 세로 AUTO"
+title: "Css - 유튜브 영상 가로 100%로 설정했을때 세로 AUTO"
 subtitle: 
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png

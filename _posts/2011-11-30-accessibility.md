@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "컨텐츠 작업하면서 꼭 확인해야 할 접근성 부분"
+title: "Html - 컨텐츠 작업하면서 꼭 확인해야 할 접근성 부분"
 subtitle: 
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
-tags: [accessibility, webstandards]
+tags: [accessibility, webstandards, chat, html]
 ---
 
 <div>

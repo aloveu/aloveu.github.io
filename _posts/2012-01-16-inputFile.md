@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "INPUT TYPE=FILE 을 이미지로 대체하기"
+title: "Css - INPUT TYPE=FILE 을 이미지로 대체하기"
 subtitle: 
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png

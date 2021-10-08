@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "인스타그램 피드 LIMIT 33개만 나오는 버그"
+title: "Js - 인스타그램 피드 LIMIT 33개만 나오는 버그"
 subtitle: 
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png

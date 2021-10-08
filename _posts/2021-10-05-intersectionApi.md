@@ -1,6 +1,6 @@
 ---
 layout: post 
-title: "엘리먼트(영역)가 화면에 보이는지 확인하는 법"
+title: "Js - 엘리먼트(영역)가 화면에 보이는지 확인하는 법"
 subtitle:
 cover-img: /assets/img/path.jpg 
 thumbnail-img: /assets/img/thumb.png 
