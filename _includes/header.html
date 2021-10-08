@@ -20,7 +20,10 @@
                 <a href="/profile" class="{% if page.url == '/profile.html' %}current{% endif %}">PROFILE</a>
             </li>
             <li>
-                <a href="{{ base_path }}/" class="{% if page.url != '/profile.html' %}current{% endif %}">ARCHIVES</a>
+                <a href="{{ base_path }}/" class="{% if page.url != '/profile.html' and page.url != '/tags/' %}current{% endif %}">ARCHIVES</a>
+            </li>
+            <li>
+                <a href="/tags" class="{% if page.url == '/tags/' %}current{% endif %}">TAGS</a>
             </li>
         </ul>
     </nav>

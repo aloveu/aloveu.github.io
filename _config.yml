@@ -10,6 +10,8 @@ urls:
     url: /
   - name: Profile
     url: /profile
+  - name: Tags
+    url: /tags
 
 # pagination of posts
 paginate: 7
