@@ -5,7 +5,7 @@ subtitle:
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
-tags: [css]
+tags: [vue]
 ---
 <p>vue에서 router로 이동할때 swipe 효과 주려면 transition 과 router를 적절히 사용 해주 면 되는데 하나씩 알아보자</p>
 <!--more-->
