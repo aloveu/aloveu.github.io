@@ -12,21 +12,12 @@ tags: [jekyll, error]
 <p>불편하게 liquid에서는 Boolean에 대한 처리를 잘못해주고 있는걸 알게 됐다.</p>
 
 <h2>사용 방법</h2>
-<pre class="html">
-// 작동 x
-{% if (a == true and b == true) or (a == false and b == false) %}
-
-// 작동 O 
-{% if a == true and b == true %}
-      {% assign finalValue = true %}
-{% endif %}
-{% if a == false and b == false %}
-      {% assign finalValue = true %}
-{% endif %}
-{% if finalValue %}
-      //작동함
-{% endif %}
-</pre>
+<p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html" data-slug-hash="zYdOwGp" data-user="aloveu" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/aloveu/pen/zYdOwGp">
+  liquid-boolean</a> by Hoon.kim (<a href="https://codepen.io/aloveu">@aloveu</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 <h2>참고</h2>
 <a href="https://idratherbewriting.com/documentation-theme-jekyll/mydoc_conditional_logic.html" target="_blank" class="link">jekyll</a>
