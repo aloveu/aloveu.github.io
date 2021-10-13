@@ -1,28 +1,29 @@
 /* color */
-$default    : #505050;
-$black      : #000;
-$white      : #fff;
-$gray       : #1e1e1e;
+$default: #505050;
+$black: #000;
+$white: #fff;
+$gray: #1e1e1e;
 
 /* distance */
-$d-p            : 24px;
-$d-l            : 40px;
+$g-width: 1200px;
+$d-p: 24px;
+$d-l: 40px;
 
 /* anchor */
-$a-color        : $default;
-$a-hover-color  : $black;
+$a-color: $default;
+$a-hover-color: $black;
 
 /* header */
-$h-height       : 60px;
-$h-border-color : rgba(0,0,0,0.1);
-$h-menu-border  : $gray;
+$h-height: 60px;
+$h-border-color: rgba(0, 0, 0, 0.1);
+$h-menu-border: $gray;
 
 /* footer */
-$f-bg           : #1b2426;
-$f-color        : #ddd;
+$f-bg: #1b2426;
+$f-color: #ddd;
 
 /* post */
-$p-navi-bg      : #f4f4f4;
-$p-border-color : rgba(0,0,0,0.1);
-$p-arrow-color  : #2b2b2b;
-$p-navi-height  : 60px;
+$p-navi-bg: #f4f4f4;
+$p-border-color: rgba(0, 0, 0, 0.1);
+$p-arrow-color: #2b2b2b;
+$p-navi-height: 60px;

@@ -2,29 +2,30 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXECHW3LKG"></script>
 <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-WXECHW3LKG');
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {dataLayer.push( arguments );}
+	gtag( 'js', new Date() );
+	gtag( 'config', 'G-WXECHW3LKG' );
 </script>
 
 
 <header class="site-header">
-    <h1 class="logo">
-        <img src="/assets/img/logo.png" alt="Aloveu"/>
-    </h1>
-    <nav>
-        <ul class="navbar">
-            <li>
-                <a href="/profile" class="{% if page.url == '/profile.html' %}current{% endif %}">PROFILE</a>
-            </li>
-            <li>
-                <a href="{{ base_path }}/" class="{% if page.url != '/profile.html' and page.url != '/tags/' %}current{% endif %}">ARCHIVES</a>
-            </li>
-            <li>
-                <a href="/tags" class="{% if page.url == '/tags/' %}current{% endif %}">TAGS</a>
-            </li>
-        </ul>
-    </nav>
+	<div class="inner">
+		<h1 class="logo">
+			<img src="/assets/img/logo.png" alt="Aloveu" />
+		</h1>
+		<nav>
+			<ul class="navbar">
+				<li>
+					<a href="/profile" class="{% if page.url == '/profile.html' %}current{% endif %}">PROFILE</a>
+				</li>
+				<li>
+					<a href="{{ base_path }}/" class="{% if page.url != '/profile.html' and page.url != '/tags/' %}current{% endif %}">ARCHIVES</a>
+				</li>
+				<li>
+					<a href="/tags" class="{% if page.url == '/tags/' %}current{% endif %}">TAGS</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
 </header>
