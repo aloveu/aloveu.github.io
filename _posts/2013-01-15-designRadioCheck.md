@@ -7,12 +7,28 @@ thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
 tags: [css, mobile]
 ---
-<p>모바일을 작업하다가 라디오버튼과 체크박스 버튼이 마음에 안들어서 검색 검색!! 그리고 내 입맛에 맞게 수정수정 한 것입니다. 물론 하위브라우저는 안됩니다. </p>
+모바일을 작업하다가 라디오버튼과 체크박스 버튼이 마음에 안들어서 검색 검색!! 그리고 내 입맛에 맞게 수정수정 한 것입니다. 물론 하위브라우저는 안됩니다.
 <!--more-->
-<p>
-    <input type="radio" name="sex" id="male" value="M"><label for="male">남</label><br>
-    <input type="radio" name="sex" id="female" value="F"><label for="female">여</label><br>
-    <input type="checkbox" name="agree" id="agree"><label for="agree">동의합니다.</label>
-</p>
-<pre class="html cH_kip"><ol><li class="odd"><span><b class="interactive">&lt;</b><a href="http://tranbot.net/html5/the-input-element.html#the-input-element" class="interactive">input</a> <b class="interactive">type="radio"</b> <b class="interactive">name="sex"</b> id="male" value="M"<b class="interactive">&gt;</b><b class="interactive">&lt;</b><a href="http://tranbot.net/html5/forms.html#the-label-element" class="interactive">label</a> <b class="interactive">for="male"</b><b class="interactive">&gt;</b>남<b class="interactive">&lt;/label</b><b class="interactive">&gt;</b></span></li><li class="even"><span><b class="interactive">&lt;</b><a href="http://tranbot.net/html5/the-input-element.html#the-input-element" class="interactive">input</a> <b class="interactive">type="radio"</b> <b class="interactive">name="sex"</b> id="female" value="F"<b class="interactive">&gt;</b><b class="interactive">&lt;</b><a href="http://tranbot.net/html5/forms.html#the-label-element" class="interactive">label</a> <b class="interactive">for="female"</b><b class="interactive">&gt;</b>여<b class="interactive">&lt;/label</b><b class="interactive">&gt;</b></span></li><li class="odd"><span><b class="interactive">&lt;</b><a href="http://tranbot.net/html5/the-input-element.html#the-input-element" class="interactive">input</a> <b class="interactive">type="checkbox"</b> <b class="interactive">name="agree"</b> id="agree" /<b class="interactive">&gt;</b><b class="interactive">&lt;</b><a href="http://tranbot.net/html5/forms.html#the-label-element" class="interactive">label</a> <b class="interactive">for="agree"</b><b class="interactive">&gt;</b>동의합니다.<b class="interactive">&lt;/label</b><b class="interactive">&gt;</b></span></li></ol></pre>
-<pre class="css cH_kip"><ol><li class="odd"><span><b class="comment">/* 라디오버튼 */</b></span></li><li class="even"><span>input[type=radio]{<b class="css">position:</b> absolute;<b class="css">margin:</b>8px 10px 0 0;<b class="css">height:</b>9px;<b class="css">width:</b>9px;<b class="css">background:</b>#fff;<b class="css">border:</b>1px solid #fff;<b class="css">filter:</b> alpha(opacity=0);-<b class="css">moz-opacity:</b> 0;-<b class="css">webkit-opacity:</b> 0;<b class="css">opacity:</b> 0;}</span></li><li class="odd"><span>input[type=radio] + label{<b class="css">font:</b> normal 18px/18px;<b class="css">margin-left:</b>35px;}</span></li><li class="even"><span>input[type=radio] + <b class="css">label:</b>:before{<b class="css">content:</b> "\2714";<b class="css">display:</b> inline-block;<b class="css">text-indent:</b> -9999px;<b class="css">width:</b> 14px;<b class="css">height:</b>14px;<b class="css">font:</b> bold 12px/12px;<b class="css">text-transform:</b> uppercase;<b class="css">border:</b> solid 1px #767676;<b class="css">border-radius:</b>7px;<b class="css">box-shadow:</b> 0 0 1px 1px #ccc;<b class="css">background:</b> #fff;<b class="css">margin:</b> 3px 4px 0 -35px;}        </span></li><li class="odd fifth"><span>input[type=<b class="css">radio]:</b>checked + <b class="css">label:</b>:before{<b class="css">text-indent:</b> 2px;<b class="css">color:</b> #0b70cd;<b class="css">text-shadow:</b> 0 0 2px #0b70cd;}</span></li><li class="even"><span><b class="comment">/* 체크박스 */</b></span></li><li class="odd"><span>input[type=checkbox]{<b class="css">position:</b> absolute;<b class="css">margin:</b>2px 10px 0 0;<b class="css">height:</b>10px;<b class="css">width:</b>10px;<b class="css">background:</b>#fff;<b class="css">border:</b>1px solid #fff;<b class="css">filter:</b> alpha(opacity=0);-<b class="css">moz-opacity:</b> 0;-<b class="css">webkit-opacity:</b> 0;<b class="css">opacity:</b> 0;}</span></li><li class="even"><span>input[type=checkbox]+label{<b class="css">font:</b> normal 18px/18px ;<b class="css">margin-left:</b>35px;}</span></li><li class="odd"><span>input[type=checkbox]+<b class="css">label:</b>:before{<b class="css">content:</b> "\2714";<b class="css">display:</b> inline-block;<b class="css">text-indent:</b> -9999px;<b class="css">width:</b> 16px;<b class="css">height:</b>16px;<b class="css">font:</b> bold 14px/14px;<b class="css">text-transform:</b> uppercase;<b class="css">border:</b> solid 1px #767676;<b class="css">border-radius:</b> 3px;<b class="css">box-shadow:</b> 0 0 1px 1px #ccc;<b class="css">background:</b> #fff;<b class="css">margin:</b> 3px 4px 0 -35px;}        </span></li><li class="even fifth"><span>input[type=<b class="css">checkbox]:</b>checked + <b class="css">label:</b>:before{<b class="css">text-indent:</b> 2px;<b class="css">color:</b> #0b70cd;<b class="css">text-shadow:</b> 0 0 2px #0b70cd;}</span></li></ol></pre>
+
+<input type="radio" name="sex" id="male" value="M"><label for="male">남</label><br>
+<input type="radio" name="sex" id="female" value="F"><label for="female">여</label><br>
+<input type="checkbox" name="agree" id="agree"><label for="agree">동의합니다.</label>
+
+```html
+<input type="radio" name="sex" id="male" value="M"><label for="male">남</label>
+<input type="radio" name="sex" id="female" value="F"><label for="female">여</label>
+<input type="checkbox" name="agree" id="agree" /><label for="agree">동의합니다.</label>
+```
+<br>
+```css
+/* 라디오버튼 */
+input[type=radio]{position: absolute;margin:8px 10px 0 0;height:9px;width:9px;background:#fff;border:1px solid #fff;filter: alpha(opacity=0);-moz-opacity: 0;-webkit-opacity: 0;opacity: 0;}
+input[type=radio] + label{font: normal 18px/18px;margin-left:35px;}
+input[type=radio] + label::before{content: "\2714";display: inline-block;text-indent: -9999px;width: 14px;height:14px;font: bold 12px/12px;text-transform: uppercase;border: solid 1px #767676;border-radius:7px;box-shadow: 0 0 1px 1px #ccc;background: #fff;margin: 3px 4px 0 -35px;}        
+input[type=radio]:checked + label::before{text-indent: 2px;color: #0b70cd;text-shadow: 0 0 2px #0b70cd;}
+/* 체크박스 */
+input[type=checkbox]{position: absolute;margin:2px 10px 0 0;height:10px;width:10px;background:#fff;border:1px solid #fff;filter: alpha(opacity=0);-moz-opacity: 0;-webkit-opacity: 0;opacity: 0;}
+input[type=checkbox]+label{font: normal 18px/18px ;margin-left:35px;}
+input[type=checkbox]+label::before{content: "\2714";display: inline-block;text-indent: -9999px;width: 16px;height:16px;font: bold 14px/14px;text-transform: uppercase;border: solid 1px #767676;border-radius: 3px;box-shadow: 0 0 1px 1px #ccc;background: #fff;margin: 3px 4px 0 -35px;}        
+input[type=checkbox]:checked + label::before{text-indent: 2px;color: #0b70cd;text-shadow: 0 0 2px #0b70cd;}
+```

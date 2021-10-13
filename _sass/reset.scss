@@ -203,3 +203,10 @@ html, body {
     tr:hover { background:#f3f3f3; }
 }
 .ellipsis{width:200px;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow:hidden;white-space:nowrap; word-wrap:normal !important;}
+
+dl{
+    dt{
+        font-weight: 500;
+    }
+    dd{margin-left:20px}
+}
