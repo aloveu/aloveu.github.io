@@ -7,6 +7,15 @@ subTitle: '포스트안 페이지'
     <p>{{ page.date | date_to_string }} - {{ site.author }}</p>
 
     {{ content }}
+
+    <!-- comment -->
+    <script src="https://utteranc.es/client.js"
+        repo="aloveu/aloveu.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+    </script>
 </article>
 
 <div class="pagination">

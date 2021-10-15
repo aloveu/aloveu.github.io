@@ -70,6 +70,10 @@
 	@extend .inner;
 }
 
+.utterances{
+	max-width:100%;
+}
+
 .pagination {
 	border-top: 1px solid $p-border-color;
 	background: $p-navi-bg;
