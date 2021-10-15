@@ -1,5 +1,6 @@
 ---
 layout: default
+subTitle: '포스트안 페이지'
 ---
 <article class="site-content">
     <h1>{{ page.title }}</h1>
@@ -9,11 +10,14 @@ layout: default
 </article>
 
 <div class="pagination">
-    {% assign prev = page.previous %}
-    {% if prev %}<a href="{{ prev.url }}" class="prev-post">{{ prev.title }}</a>
-    {% endif %}
-    {% assign next = page.next %}
-    {% if next %}
-    <a href="{{ next.url }}" class="next-post">{{ next.title }}</a>
-    {% endif %}
+    <div class="inner posting">
+        {% assign prev = page.previous %}
+            {% if prev %}
+            <a href="{{ prev.url }}" class="next-post">{{ prev.title }}</a>
+            {% endif %}
+        {% assign next = page.next %}
+            {% if next %}
+                <a href="{{ next.url }}" class="prev-post">{{ next.title }}</a>
+            {% endif %}
+    </div>
 </div>
