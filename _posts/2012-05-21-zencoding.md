@@ -122,6 +122,6 @@ c // color:#000;
 
 다른것도 엄청나게 많지만 다 쓸려면 시간낭비이기에… (수십,수백개) 라 간단히 패턴만 알고 가면 쓰는데는 문제 없을 것 같다. 그래도 알아야겠다는 사람들을 위해서 참고 할 수 있는 url을 남겨 놓겠다.
 
-### 참고사이트
+### 📌 참조
 * <a href="http://code.google.com/p/zen-coding/wiki/ZenHTMLSelectorsEn" target="_blank" title="새창" rel="noopener noreferrer" class="link">http://code.google.com/p/zen-coding/wiki/ZenHTMLSelectorsEn</a>
 * <a href="http://code.google.com/p/zen-coding/downloads/detail?name=ZenCodingCheatSheet.pdf" target="_blank" title="새창" rel="noopener noreferrer" class="link">http://code.google.com/p/zen-coding/downloads/detail?name=ZenCodingCheatSheet.pdf</a>

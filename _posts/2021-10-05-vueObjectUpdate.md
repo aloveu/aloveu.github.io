@@ -36,5 +36,5 @@ Vue.set(vm.someArray, 'a', '값');
 this.$set(this.someArray, 'a', '값');
 ```
 
-## 참고
+## 📌 참조
 <a href="https://v3.ko.vuejs.org/guide/change-detection.html" target="_blank">Vue2의 변경 감지 주의사항</a>

@@ -14,5 +14,5 @@ tags: [instagram, js]
 
 자세한 방법은 후에 정리할껀데 아래 사이트에 인스타패치라는 코드를 참고하면 된다.
 
-### 참고 사이트
+### 📌 참조
 <a href="http://d4nyll.github.io/instafetch/" target="_blank" class="link">http://d4nyll.github.io/instafetch/</a>

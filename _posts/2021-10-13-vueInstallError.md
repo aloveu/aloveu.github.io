@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Vue - cli 설치 후 에러"
+title: "Vue - ⛔ cli 설치 후 에러"
 subtitle:
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png

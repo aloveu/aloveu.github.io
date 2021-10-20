@@ -184,7 +184,7 @@ tags: [chat, accessibility, webstandards]
 
 기본적인거 간단히 10개만 써놨지만 웹접근성에 대한 지침은 이밖에도 많이 있습니다. 데이터테이블을 코딩할때, 서식부분을 코딩할때,각 마크업의 용도,언어선택 등등 더 알고 싶으면 <a title="새창" href="http://www.wah.or.kr/index.asp" target="_blank">웹접근성연구소</a>에서 참고 하면 됩니다. 아니면 저에게 문의해주세요옷! 언제든 열려 있습니다. 바쁘면 답이 좀 늦어지긴…… 하죠…. =ㅁ=;
 
-## 관련사이트
+## 📌 관련사이트
 * <a title="새창" href="http://www.wah.or.kr/index.asp" target="_blank" class="link">웹접근성연구소</a>
 * <a title="새창" href="http://www.w3c.or.kr/Translation/WCAG20/" target="_blank" class="link">웹컨텐츠 접근성지침</a>
 * <a title="새창" href="http://html.nhndesign.com/index.php?mid=textyle&amp;category=5853&amp;vid=blog" target="_blank" class="link">네이버 널리</a>

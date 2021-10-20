@@ -32,5 +32,6 @@ function videoScrollHandler() {
 
 videoScrollHandler();
 ```
-## 참고
+
+## 📌 참조
 <a href="https://developer.mozilla.org/ko/docs/Web/API/Intersection_Observer_API" target="_blank">MDN</a>

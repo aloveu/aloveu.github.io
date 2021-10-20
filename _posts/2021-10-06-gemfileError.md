@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ruby - Could not locate Gemfile 오류"
+title: "Ruby - ⛔ Could not locate Gemfile 오류"
 subtitle:
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png

@@ -14,7 +14,7 @@ Vue 에서는 필터 기능으로 해당 문자열을 내가 원하는 포멧으
 
 보통 전역으로 filter.js를 따로 만들어 관리를 하고 index.js 에 필터를 임포트해서 전역으로 쓴다.
 
-## 사용 방법
+## ✔ 사용 방법
 ### 1. filter.js 생성
 프로젝트 src/filter/filter.js 파일을 추가한다.
 
@@ -72,5 +72,5 @@ price = 1000;
 [[ price | comma | won ]]
 ```
 
-## 참고
+## 📌 참조
 <a href="https://kr.vuejs.org/v2/guide/filters.html" target="_blank" class="link">kr.vuejs.org</a>

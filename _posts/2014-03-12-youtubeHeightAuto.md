@@ -28,5 +28,5 @@ tags: [css, youtube]
 </div>
 살펴보면 유튜브 아이프레임을 div 컨테이너에 넣어서 패딩값으로 높이를 조절했다. 저런생각을 했다는게 신기하다 =ㅁ=;
 
-## 참고
+## 📌 참조
 <a href="http://avexdesigns.com/responsive-youtube-embed/">http://avexdesigns.com/responsive-youtube-embed/</a>
