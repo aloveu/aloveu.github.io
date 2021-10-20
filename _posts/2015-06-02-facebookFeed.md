@@ -37,3 +37,9 @@ $(window).load(function(){
 ```
 
 <div class="facebookfeed"><ul></ul></div>
+
+<style>
+.facebookfeed li {
+	float: left;
+}
+</style>

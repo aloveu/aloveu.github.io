@@ -58,7 +58,7 @@
 .btnTag {
 	display: inline-block;
 	padding: 2px 5px;
-	border: 1px solid rgba(27, 31, 35, .15);
+	border: 1px solid rgba(27, 31, 35, .15) !important;
 	border-radius: 3px;
 	color: $white;
 	font-size: 12px;
@@ -67,6 +67,9 @@
 	vertical-align: middle;
 	cursor: pointer;
 	background: #2ea44f;
+	&:hover{
+		color: $white !important;
+	}
 }
 
 .site-content {
@@ -82,10 +85,19 @@
 			border-radius:12px;
 		}
 	}
-	a.link{
-		color:#10a1e7;
+	a{
+		border-bottom:1px solid #ffd24d;
+		&::before{
+			content:'🔗'
+		}
+		&:hover{
+			color: #ffbf00;
+		}
 	}
-	img{max-width:100%}
+	img{
+		max-width:100%;
+		border:1px solid rgba(0,0,0,0.1);
+	}
 }
 
 .blog-tags{

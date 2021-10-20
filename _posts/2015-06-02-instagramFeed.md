@@ -90,3 +90,15 @@ feed.run();
 <p>~ 는 아니고 해결 방법이 있긴 하다. api호출이 시간당 5000뷰니깐 클라이언트쪽에서 피드를 불러오면 계속 페이지 열때마다 api를 불러오게 된다. 당연히 사람이 몰리면 뻗으니… 서버쪽에서 처리를 하는게 맞는거 같다. 서버쪽에서 분당 한번씩이라던가 적당한 시간에 api호출해서 피드를 받아서 이미지 url이랑 링크등 정보를 DB에 쌓은 후에 클라이언트쪽에서 페이지열때는 db에서 링크만 뿌려주면 되는것이다. </p>
 <p>이렇게 프로젝트를 해보진 않았는데 이론상 그렇다는 말이니 후에 프로젝트가 있으면 이걸로 테스트를 해보고 고쳐가면 될 것 같다.</p>
 
+<style>
+#instafeed1, #instafeed, #instafeed2 {
+	overflow: hidden;
+	display: block;
+}
+
+#instafeed1 li, #instafeed li, #instafeed2 li {
+	float: left;
+	width: 200px;
+	height: 200px;
+}
+</style>

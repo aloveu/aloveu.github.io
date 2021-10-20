@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Vue - routes 의 meta 정보를 children 에서 활용하기"
-subtitle: 'test'
 tags: [vue]
 ---
 routes meta 정보를 페이지에서 사용하는 도중에 children 페이지에 모두 똑같은 meta 정보를 넣어서 사용하다가 너무 비효율적인 거 같아 찾아봤는데  

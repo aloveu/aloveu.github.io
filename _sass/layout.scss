@@ -11,6 +11,7 @@
 	right: 0;
 	z-index: 99;
 	height: $h-height;
+	min-width:$m-width;
 	background: $white;
 	border-bottom: 1px solid $h-border-color;
 
@@ -19,7 +20,7 @@
 		float: left;
 		height: $h-height;
 		margin: 0;
-		padding: 10px $d-l;
+		padding: 10px 0 10px $d-l;
 		line-height: 0;
 
 		img {
@@ -30,7 +31,7 @@
 
 	nav {
 		float: right;
-		padding: 0 $d-l;
+		padding: 0 $d-l 0 0;
 
 		.navbar {
 			margin: 0;
@@ -64,13 +65,14 @@
 	}
 }
 
-.site-content {
+.site-content, .list {
 	position: relative;
 	padding: $h-height $d-l;
 	@extend .inner;
 }
 
 .utterances{
+	margin-top: $d-l;
 	max-width:100%;
 }
 
