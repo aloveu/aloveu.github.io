@@ -48,6 +48,9 @@
 
 		.meta {
 			.date {
+				&::before{
+					content:'📆 ';
+				}
 				margin-bottom: 0;
 				font-size: 14px;
 			}

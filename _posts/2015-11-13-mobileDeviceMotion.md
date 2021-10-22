@@ -1,10 +1,8 @@
 ---
+category: dev
 layout: post
 title: "Js - 모바일 자이로센서 확인"
 subtitle: 
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
 tags: [jquery, mobile, js]
 ---
 2014년경 뉴욕타임스퀘어 광장에서 자신의 모바일기기에 쓴 글을 휴대폰 던지는 모션을 취하면 전광판에 submit 되게 했던 프로젝트였다. 

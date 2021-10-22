@@ -1,4 +1,5 @@
 ---
+category: dev
 layout: post
 title: "Vue - routes 의 meta 정보를 children 에서 활용하기"
 tags: [vue]

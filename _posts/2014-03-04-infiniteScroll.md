@@ -1,10 +1,8 @@
 ---
+category: dev
 layout: post
 title: "Js - INFINITE SCROLL PLUGIN (스크롤 새로고침, 스크롤 로딩, 무한 스크롤)"
 subtitle: 
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
 tags: [js, jquery]
 ---
 ## Infinite scroll

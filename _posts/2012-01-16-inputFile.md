@@ -1,10 +1,8 @@
 ---
+category: dev
 layout: post
 title: "Css - INPUT TYPE=FILE 을 이미지로 대체하기"
 subtitle: 
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
 tags: [css, js, webstandards]
 ---
 이미지가 없기 때문에 border와 background-color을 사용했다. 실제 사용할때는 #file_box에 있는 background부분을 이미지로 교체해주면 된다. 너비&amp;높이도 이미지 크기로 조절하고 border은 지워주면 된다.

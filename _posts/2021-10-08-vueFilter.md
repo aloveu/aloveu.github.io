@@ -1,10 +1,8 @@
 ---
+category: dev
 layout: post
 title: "Vue - filter 로 문자열을 원하는 포멧으로 변환시키기"
 subtitle:
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
 tags: [vue]
 ---
 Vue 에서는 필터 기능으로 해당 문자열을 내가 원하는 포멧으로 변환을 시킬 수가 있다.

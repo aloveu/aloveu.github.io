@@ -1,10 +1,8 @@
 ---
+category: dev
 layout: post
 title: "Css - 체크박스, 라디오버튼 디자인 입히기"
 subtitle: 
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
 tags: [css, mobile]
 ---
 모바일을 작업하다가 라디오버튼과 체크박스 버튼이 마음에 안들어서 검색 검색!! 그리고 내 입맛에 맞게 수정수정 한 것입니다. 물론 하위브라우저는 안됩니다.

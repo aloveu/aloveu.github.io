@@ -1,10 +1,8 @@
 ---
+category: etc
 layout: post
 title: "잡담 - CAFE24쇼핑몰 스마트디자인 정리"
 subtitle: 
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
 tags: [chat, cafe24]
 ---
 ## 개요

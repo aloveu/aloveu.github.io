@@ -1,10 +1,8 @@
 ---
+category: dev
 layout: post
 title: "Html - 아이폰 주소창 없애기"
 subtitle: 
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
 tags: [html, js, ios]
 ---
 minimal-ui 만 추가해주면 된다.

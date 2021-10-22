@@ -1,10 +1,8 @@
 ---
+category: dev
 layout: post
 title: "Js - 인스타그램피드 IE8이하 에러 해결"
 subtitle: 
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
 tags: [js, instagram]
 ---
 인스타 피드 적용을 하다 보니 ie8쪽에서 에러가 난다.<br>

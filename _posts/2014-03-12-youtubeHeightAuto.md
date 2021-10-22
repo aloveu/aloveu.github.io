@@ -1,10 +1,8 @@
 ---
+category: dev
 layout: post
 title: "Css - 유튜브 영상 가로 100%로 설정했을때 세로 AUTO"
 subtitle: 
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
 tags: [css, youtube]
 ---
 말 그대로 유튜브 영상을 가로 100%로 설정했을때 가로 너비에 비례해서 높이가 혼자 변하지 못했다.

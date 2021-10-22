@@ -1,10 +1,8 @@
 ---
+category: dev
 layout: post
 title: "Js - 인스타그램 이미지 가져오기"
 subtitle: 
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
 tags: [instagram, js]
 ---
 <strong>인스타그램 API 정책이 바껴서 태그로 호출은 안된다고 보면 된다. 모두 앱에 대한 승인건도 그렇고 태그를 호출할래도 accessToken을 받아서 처리하게 되어있는데 그렇게 되면 자기 계정의 태그만 불러지는 현상이 발생한다.</strong>

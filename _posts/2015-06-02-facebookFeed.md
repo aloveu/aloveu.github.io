@@ -1,10 +1,8 @@
 ---
+category: dev
 layout: post
 title: "Js - 페이스북 글 가져오기"
 subtitle: 
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
 tags: [facebook, js]
 ---
 페이스북 타임라인의 글을 가져와 보자..해보니 페이지의 글은 불러오고 개인계정 타임라인 글은 못불러오는듯 하다

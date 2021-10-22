@@ -1,10 +1,8 @@
 ---
+category: dev
 layout: post
 title: "Js - YOUTUBE IFRAME API로 유튜브영상 제어하기"
 subtitle: 
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
 tags: [js, css, youtube]
 ---
 유튜브영상을 프로젝트에 삽입시킬때 제어를 해야하는 경우가 있다. 슬라이드에 유튜브영상을 넣어서 재생중일때는 자동슬라이드를 막는다던가.. 재생중일때 슬라이드 시키면 재생을 멈춘다던가 하는 작업을 해야될때 참고해둘만 하다.

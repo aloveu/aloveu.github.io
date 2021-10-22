@@ -1,10 +1,8 @@
 ---
+category: error
 layout: post
 title: "Vue - ⛔ cli 설치 후 에러"
 subtitle:
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
 tags: [vue, error]
 ---
 **'vue'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는배치 파일이 아닙니다.**

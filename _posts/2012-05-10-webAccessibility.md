@@ -1,10 +1,8 @@
 ---
+category: dev
 layout: post
 title: "웹접근성"
 subtitle: Excerpt from Soulshaping by Jeff Brown
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
 tags: [chat, accessibility, webstandards]
 ---
 ## <a title="네이버 위키백과(새창)" href="http://ko.wikipedia.org/wiki/%EC%9B%B9_%EC%A0%91%EA%B7%BC%EC%84%B1" target="_blank">웹접근성이란?</a>

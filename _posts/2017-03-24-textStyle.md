@@ -1,10 +1,8 @@
 ---
+category: dev
 layout: post
 title: "Css - TEXT를 더 다양하게 꾸미기"
 subtitle: 
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
 tags: [css]
 ---
 이번 포스트에는 텍스트를 기존보다 더 다양한 방법으로 꾸미는 방법을 정리 해본다.

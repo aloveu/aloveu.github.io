@@ -1,10 +1,8 @@
 ---
+category: dev
 layout: post
 title: "Html - 컨텐츠 작업하면서 꼭 확인해야 할 접근성 부분"
 subtitle: 
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
 tags: [accessibility, webstandards, chat, html]
 ---
 1. 논리적인 구조 : 왼쪽상단에서부터 우측하단까지 중요한 순서대로 놓는게 논리적인 구조에 맞다. 특히 탭메뉴로 이루어진 게시판같은 경우는 탭제목&gt;내용&gt;더보기,탭제목&gt;내용&gt;더보기 순서대로 구성해야한다.

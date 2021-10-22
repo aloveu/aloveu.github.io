@@ -1,10 +1,8 @@
 ---
+category: dev
 layout: post
 title: "Css - SELECT박스 디자인 입히기"
 subtitle: 
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
 tags: [css, webstandards]
 ---
 <p>selectbox 는 원래 디자인이 안된다. border,background 정도야 요즘 나오는 브라우저들은 지원해주지만 제약이 많은건 사실이다.<br>하지만 안되는건 없으니 꼼수로 디자인을 입혀보자</p>
