@@ -1,5 +1,5 @@
 ---
-category: error
+categories: Error
 layout: post
 title: "Ruby - ⛔ Could not locate Gemfile 오류"
 subtitle:

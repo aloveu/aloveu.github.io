@@ -1,11 +1,12 @@
 ---
 layout: default
-title: Home
 ---
+
 <article class="list">
 	{% include submenu.html %}
 	<ul class="post-list">
-		{% for post in paginator.posts %}
+		{% assign category = page.category | default: page.title %}
+		{% for post in site.categories[category] %}
 		<li>
 			<a href="{{ post.url }}">
 				<h3 class="post-tit">{{ post.title }}</h3>

@@ -1,5 +1,5 @@
 ---
-category: dev
+categories: Dev
 layout: post
 title: "Js - 인스타그램 피드 LIMIT 33개만 나오는 버그"
 subtitle: 

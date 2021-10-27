@@ -1,5 +1,5 @@
 ---
-category: dev
+categories: Dev
 layout: post
 title: "Vue - filter 로 문자열을 원하는 포멧으로 변환시키기"
 subtitle:

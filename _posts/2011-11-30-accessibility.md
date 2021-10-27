@@ -1,5 +1,5 @@
 ---
-category: dev
+categories: Dev
 layout: post
 title: "Html - 컨텐츠 작업하면서 꼭 확인해야 할 접근성 부분"
 subtitle: 

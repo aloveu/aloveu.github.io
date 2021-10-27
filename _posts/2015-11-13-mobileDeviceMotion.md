@@ -1,5 +1,5 @@
 ---
-category: dev
+categories: Dev
 layout: post
 title: "Js - 모바일 자이로센서 확인"
 subtitle: 

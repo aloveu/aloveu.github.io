@@ -1,5 +1,5 @@
 ---
-category: dev
+categories: Dev
 layout: post
 title: "잡담 - 코딩을 좀 더 빠르게.. ZEN CODING 을 알아보자"
 subtitle: 

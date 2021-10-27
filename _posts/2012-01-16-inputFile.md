@@ -1,5 +1,5 @@
 ---
-category: dev
+categories: Dev
 layout: post
 title: "Css - INPUT TYPE=FILE 을 이미지로 대체하기"
 subtitle: 

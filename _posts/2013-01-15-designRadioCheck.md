@@ -1,5 +1,5 @@
 ---
-category: dev
+categories: Dev
 layout: post
 title: "Css - 체크박스, 라디오버튼 디자인 입히기"
 subtitle: 

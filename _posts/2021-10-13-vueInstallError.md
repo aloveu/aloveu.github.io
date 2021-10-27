@@ -1,5 +1,5 @@
 ---
-category: error
+categories: Error
 layout: post
 title: "Vue - ⛔ cli 설치 후 에러"
 subtitle:
@@ -22,7 +22,7 @@ tags: [vue, error]
 @vue/cli를 글로벌로 설치 했다면 설치된 위치는 아래와 같다.
 
 ```text
-C:\Users\{{사용자이름}}\AppData\Roaming\npm
+C:\Users\[[사용자이름]]\AppData\Roaming\npm
 ```
 
 ![vue create error](/assets/img/post/vueInstallError2.png)

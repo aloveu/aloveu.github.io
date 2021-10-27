@@ -1,5 +1,5 @@
 ---
-category: dev
+categories: Dev
 layout: post
 title: "Css - TEXT를 더 다양하게 꾸미기"
 subtitle: 

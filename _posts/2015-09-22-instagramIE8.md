@@ -1,5 +1,5 @@
 ---
-category: dev
+categories: Dev
 layout: post
 title: "Js - 인스타그램피드 IE8이하 에러 해결"
 subtitle: 

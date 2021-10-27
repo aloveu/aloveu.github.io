@@ -39,6 +39,9 @@
 	li {
 		padding: $d-l 0;
 		border-bottom: 1px solid $p-border-color;
+		&:first-child{
+			padding-top: 0;
+		}
 
 		.post-tit {
 			margin: 0;
@@ -89,7 +92,7 @@
 		}
 	}
 	a{
-		border-bottom:1px solid #ffd24d;
+		border-bottom:2px solid #ffd24d;
 		&::before{
 			content:'🔗'
 		}

@@ -1,5 +1,5 @@
 ---
-category: error
+categories: Error
 layout: post
 title: "Jekyll - ⛔ Liquid Boolean 처리(and, or)"
 subtitle:

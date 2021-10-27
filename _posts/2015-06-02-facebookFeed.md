@@ -1,5 +1,5 @@
 ---
-category: dev
+categories: Dev
 layout: post
 title: "Js - 페이스북 글 가져오기"
 subtitle: 

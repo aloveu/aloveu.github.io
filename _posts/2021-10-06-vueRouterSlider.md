@@ -1,5 +1,5 @@
 ---
-category: dev
+categories: Dev
 layout: post
 title: "Vue - router 이동때 페이지 스와이프 효과 주기"
 subtitle:

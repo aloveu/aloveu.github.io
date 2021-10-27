@@ -1,5 +1,5 @@
 ---
-category: dev
+categories: Dev
 layout: post
 title: "Js - 인스타그램 이미지 가져오기"
 subtitle: 

@@ -40,11 +40,11 @@
 			font-size: 15px;
 			list-style: none;
 
-			li {
+			& > li {
+				position: relative;
 				float: left;
 				margin-left: 10px;
 				line-height: 1;
-
 				a {
 					display: block;
 					height: $h-height;
@@ -74,6 +74,39 @@
 .utterances{
 	margin-top: $d-l;
 	max-width:100%;
+}
+
+.subMenu{
+	width:100%;
+	max-width:480px;
+	margin: 12px 0;
+	padding: 24px;
+	border:1px solid rgba(0,0,0, 0.1);
+	border-radius:4px;
+	h3{
+		margin: 0;
+		padding: 0;
+	}
+	ul{
+		margin: 12px 0 0;
+		padding-left: 24px;
+		li{
+			a{
+				display: inline-block;
+				height: $h-height/2;
+				line-height: $h-height/2;
+				&:hover{
+					color: #df0174;
+					border-bottom:1px solid #df0174;
+				}
+				&.active{
+					border-bottom:1px solid #df0174;
+					color: #df0174;
+					font-weight: 400;
+				}
+			}
+		}
+	}
 }
 
 .pagination {

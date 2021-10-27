@@ -1,5 +1,5 @@
 ---
-category: dev
+categories: Dev
 layout: post
 title: "Css - HTML5 PLACEHOLDER 색,줄바꿈"
 subtitle: 

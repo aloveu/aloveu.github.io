@@ -1,5 +1,5 @@
 ---
-category: etc
+categories: Etc
 layout: post
 title: "잡담 - CAFE24쇼핑몰 스마트디자인 정리"
 subtitle: 

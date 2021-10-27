@@ -1,5 +1,5 @@
 ---
-category: dev
+categories: Dev
 layout: post 
 title: "Js - 엘리먼트(영역)가 화면에 보이는지 확인하는 법"
 subtitle: 

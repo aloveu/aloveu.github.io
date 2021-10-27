@@ -1,5 +1,5 @@
 ---
-category: dev
+categories: Dev
 layout: post
 title: "Html - 아이폰 주소창 없애기"
 subtitle: 

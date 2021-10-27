@@ -1,5 +1,5 @@
 ---
-category: dev
+categories: Dev
 layout: post
 title: "Js - YOUTUBE IFRAME API로 유튜브영상 제어하기"
 subtitle: 

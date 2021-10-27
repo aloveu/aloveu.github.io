@@ -1,5 +1,5 @@
 ---
-category: dev
+categories: Dev
 layout: post
 title: "Css - 유튜브 영상 가로 100%로 설정했을때 세로 AUTO"
 subtitle: 

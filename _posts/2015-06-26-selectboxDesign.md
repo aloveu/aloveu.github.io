@@ -1,5 +1,5 @@
 ---
-category: dev
+categories: Dev
 layout: post
 title: "Css - SELECT박스 디자인 입히기"
 subtitle: 

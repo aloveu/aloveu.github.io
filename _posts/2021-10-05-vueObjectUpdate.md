@@ -1,5 +1,5 @@
 ---
-category: dev
+categories: Dev
 layout: post
 title: "Vue - Data 업데이트를 했는데 화면이 바뀌지 않을 때"
 subtitle:

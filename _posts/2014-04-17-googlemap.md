@@ -1,5 +1,5 @@
 ---
-category: etc
+categories: Etc
 layout: post
 title: "잡담 - 구글맵 사용(동해,일본해) ㅡㅡ;"
 subtitle: 

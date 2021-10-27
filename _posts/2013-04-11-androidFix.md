@@ -1,5 +1,5 @@
 ---
-category: dev
+categories: Dev
 layout: post
 title: "Js - 안드로이드 FIXED된 레이어 가로,세로 전환시 뷰포트 문제"
 subtitle: 

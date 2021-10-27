@@ -1,5 +1,5 @@
 ---
-category: dev
+categories: Dev
 layout: post
 title: "Js - INFINITE SCROLL PLUGIN (스크롤 새로고침, 스크롤 로딩, 무한 스크롤)"
 subtitle: 

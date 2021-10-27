@@ -1,5 +1,5 @@
 ---
-category: dev
+categories: Dev
 layout: post
 title: "웹접근성"
 subtitle: Excerpt from Soulshaping by Jeff Brown
