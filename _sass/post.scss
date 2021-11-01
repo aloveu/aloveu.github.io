@@ -73,6 +73,9 @@
 	vertical-align: middle;
 	cursor: pointer;
 	background: #2ea44f;
+	&::before{
+		display: none;
+	}
 	&:hover{
 		color: $white !important;
 	}
@@ -81,6 +84,14 @@
 .site-content {
 	h1 {
 		font-size: 1.7em;
+	}
+	.sub-info{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: $d-p;
+		margin-bottom: $d-p;
+		border-bottom:1px solid $h-border-color;
 	}
 
 	pre {
@@ -114,9 +125,6 @@
 		li{
 			display: inline-block;
 			.btnTag{
-				&::before{
-					display: none;
-				}
 				padding:3px 5px;
 				font-size: 14px;
 			}
