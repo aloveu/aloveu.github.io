@@ -111,6 +111,14 @@
 			color: #ffbf00;
 		}
 	}
+	em{
+		display: inline-block;
+		padding:2px 4px;
+		border-radius:2px;
+		color: #000;
+		font-style:normal;
+		background:#f2f2f2;
+	}
 	img{
 		max-width:100%;
 		border:1px solid rgba(0,0,0,0.1);
