@@ -13,30 +13,80 @@ title: Profile
         <dt>사는곳</dt>
         <dd>{{site.author_location}}</dd>
         <dt>직업</dt>
-        <dd>프론트엔드 개발자</dd>
+        <dd>퍼블리셔(09년~17년) + 프론트엔드 개발자(17년~)</dd>
         <dt>직장</dt>
         <dd><a title="새창" href="http://socialbean.co.kr/" target="_blank" rel="noopener noreferrer">소셜빈</a> 플랫폼개발1팀</dd>
         <dt>E-mail</dt>
         <dd>{{site.author_email}}</dd>
     </dl>
 
+    <h2>경험</h2>
+	<ul>
+		<li>webpack,lint,prettier.. 환경구축이 가능하고 vuejs로 작업이 가능합니다.</li>
+		<li>css 전처리기(scss) 사용이 가능합니다.</li>
+		<li>테스트코드 작성, 코드 리뷰의 경험이 있습니다.</li>
+		<li>기존 폴링이였던 작업들을 websocket으로 전환한 경험이 있습니다.</li>
+		<li>데이터를 차트로 표현 할 수 있습니다.</li>
+		<li>전체 사이트 jquery를 바닐라js로 변환 작업 경험이 있습니다.</li>
+		<li>웹표준을 준수하고 웹접근성 마크 획득 경험이 있습니다.</li>
+		<li>SEO작업과 사이트성능 최적화 작업을 진행해봤습니다.</li>
+		<li>인스타그램, 페이스북, 카카오톡등 연동 경험이 있습니다.</li>
+		<li>cafe24 스마트 디자인으로 쇼핑몰 작업이 가능합니다.</li>
+		<li>UI 라이브러리(메테리얼UI, 부트스트랩, 캐러셀..) 작업이 가능합니다.</li>
+	</ul>
+
     <h2>개인이력</h2>
-    <ul>
-        <li>2021년 01월 18일 ~ 재직중 (주) 소셜빈</li>
-        <li>2017년 10월 30일 ~ 2021년 1월 15일 (주) 빗썸</li>
-        <li>2016년 12월 20일 ~ 2017년 10월 27일 (주) NSUSLAB</li>
-        <li>2011년 7월 18일~ 2016년 9월30일 (주)포스트비쥬얼 근무</li>
-        <li>2009년 6월 ~ 2011년 6월 (주)위치스 근무</li>
-    </ul>
+	<h3>소셜빈 <a href="http://socialbean.co.kr/" target="_blank" title="새창" class="link">http://socialbean.co.kr/</a></h3>
+	<ul>
+		<li>2021년 01월 18일 ~ 재직중</li>
+		<li>인스타그램 인플루언서 기반 소셜커머스. 백오피스, 쇼핑몰 개발</li>
+		<li>PHP CI + Jquery 기반 홈페이지를 Webpack + Vuejs 로 점진적 전환</li>
+		<li>webpack 환경 구축, vuejs 관련 전반적 아키텍처 담당</li>
+		<li>클레이튼 기반 nft 민팅 서비스 개발 진행중</li>
+		<li>jest로 테스트코드 작성 경험</li>
+		<li>형상관리(git), aws code commit, jara, confluence, slack, Figma로 협업</li>
+		<li>webpack, vuejs, scss, web3, smart contract</li>
+	</ul>
+	<h3>빗썸 <a href="https://www.bithumb.com/" target="_blank" title="새창" class="link">https://www.bithumb.com/</a></h3>
+	<ul>
+		<li>2017년 10월 30일 ~ 2021년 1월 15일</li>
+		<li>가상자산 거래소. 가상자산 거래에 관한 전반적 데이터 핸들링</li>
+		<li>빗썸 전체 개편, 차트 개편(highchart => tradingview chart)</li>
+		<li>성능개선, jquery > 바닐라js로 전체 변경, react 준비, 포인트거래소, usdt 추가 개발(불발)</li>
+		<li>차트, 공시, 예치, 스테이킹, 렌딩 서비스 (퍼블리싱 + 프론트) 신규개발 담당</li>
+		<li>코드 리뷰 담당</li>
+		<li>형상관리(git, svn), bitbucket, jara, confluence, zeplin으로 협업</li>
+		<li>websocket, highchart, tradingview chart, ajax, jquery, vanillajs</li>
+	</ul>
+	<h3>NSUSLAB <a href="https://www.nsuslab.io/" target="_blank" title="새창" class="link">https://www.nsuslab.io/</a></h3>
+	<ul>
+		<li>2016년 12월 20일 ~ 2017년 10월 27일</li>
+		<li>HTML5 게임 프로토타입 작성 &amp; UI/UX 개발</li>
+		<li>gulp, scss, html5, css3, svg, angular</li>
+	</ul>
+	<h3>포스트비쥬얼 <a href="http://www.postvisual.com/" target="_blank" title="새창" class="link">http://www.postvisual.com/</a></h3>
+	<ul>
+		<li>2011년 7월 18일~ 2016년 9월30일</li>
+		<li>디지털 광고 에이전시로 각종 디지털 광고 진행</li>
+		<li>반응형웹 경험, 프로모션 페이지 퍼블리싱, 이미지 이동확대&합성, 스크롤을 통한 영상제어, 인터렉티브한 영상 페이지, 자이로센서, 페이스북 앱페이지 제작, 워드프레스 홈페이지 제작</li>
+		<li>jquery, html, css</li>
+	</ul>
+	<h3>위치스 <a href="http://www.witches.kr/" target="_blank" title="새창" class="link">http://www.witches.kr/</a></h3>
+	<ul>
+		<li>2009년 6월 ~ 2011년 6월</li>
+		<li>SI로 주로 관공서 홈페이지 전체를 퍼블리싱. 웹접근성 획득</li>
+		<li>IE6부터 크로스브라우징 경험. 많은 브라우저 지원 가능</li>
+		<li>jquery, html, css, php, 웹접근성</li>
+	</ul>
     
-    <h2>참여프로젝트<strong class="impt2">*표시는 전체퍼블리싱</strong></h2>
+    <h2>참여프로젝트<strong class="impt2">*표시는 전체작업</strong></h2>
     <ul>
         <li>2021) 소셜빈 핫트샵 webpack + vue 전환 프로젝트</li>
         <li>2017 ~ 2021) 빗썸 운영 유지보수 업무</li>
-        <li>2020) 빗썸 공시, 예치, 스테이킹, 렌딩 서비스 프론트 개발</li>
+        <li>2020) *빗썸 공시, 예치, 스테이킹, 렌딩 서비스 프론트 개발</li>
         <li>2019) 빗썸 개편</li>
-        <li>2018) 빗썸 웹소켓 적용 (기존 폴링 > 웹소켓 전환)</li>
-        <li>2017) 빗썸 차트 개편 (하이차트 > 트레이딩뷰)</li>
+        <li>2018) *빗썸 웹소켓 적용 (기존 폴링 > 웹소켓 전환)</li>
+        <li>2017) *빗썸 차트 개편 (하이차트 > 트레이딩뷰)</li>
         <li>2017) HTML5 게임 프로토타입 작성 &amp; UI/UX 개발</li>
         <li>2016) NIKE UNLIMITED</li>
         <li>2016) 이니스프리 행키시네마</li>
@@ -85,7 +135,7 @@ title: Profile
         <li>2013) *위런서울2013<a title="새창" href="http://www.nikeplayseoul.com/" target="_blank" rel="noopener noreferrer">http://www.nikeplayseoul.com/</a></li>
         <li>2013) *더블하트</li>
         <li>2013) *화이트탐폰2차<a title="새창" href="http://www.gripthedifference2.com" target="_blank" rel="noopener noreferrer">http://www.gripthedifference2.com</a></li>
-        <li>2013) *시크릿홀<a title="새창" href="http://www.whitesecrethole.com/" target="_blank" rel="noopener noreferrer">http://www.whitesecrethole.com/</a></li>
+        <li>2013) *화이트시크릿홀<a title="새창" href="http://www.whitesecrethole.com/" target="_blank" rel="noopener noreferrer">http://www.whitesecrethole.com/</a></li>
         <li>2013) *어바웃 이벤트페이지</li>
         <li>2013) *화이트탐폰<a title="새창" href="http://www.gripthedifference.com" target="_blank" rel="noopener noreferrer">http://www.gripthedifference2.com</a></li>
         <li>2013) *나이키컵 앱 링크페이지</li>

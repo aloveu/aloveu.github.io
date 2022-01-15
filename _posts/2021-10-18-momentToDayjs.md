@@ -84,6 +84,7 @@ dayjs.extend(duration);
 번들링을 하다보면 유난히 큰 모듈들을 발견하기도 하는데 이때 문서 상단에서 스샷으로 보여 드렸던 번들 포비아(<a href="https://bundlephobia.com/" target="_blank" class="link">https://bundlephobia.com/</a>) 사이트에서 해당 패키지들을 검색해보면 내가 검색한 패키지와 비슷한 패키지들을 추천해줍니다.
 
 ![번들포비아](/assets/img/post/bundle2.png)
+
 dayjs는 96%가 유사하다고 나오죠.
 
 ## 📌 번외
