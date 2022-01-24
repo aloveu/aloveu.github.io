@@ -41,7 +41,8 @@ Vue.filter('comma', (value) => {
 //그래야 test code 작성때 comma 에 접근할 수 있다.
 const comma = (value) => {
     if (!value) return '';
-    return String(value).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+	return String(value).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+	// return value.toLocaleString(); // 간단하게 toLocaleString으로도 가능하다.
 };
 Vue.filter('mmm_ddd', comma);
 ```
