@@ -1,4 +1,4 @@
-const cacheName = 'pwatest-v2';
+const cacheName = 'pwatest-v3';
 const appShellFiles = [
     '/icon-192x192.png'
 ];
