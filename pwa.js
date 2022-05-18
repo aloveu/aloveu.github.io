@@ -1,6 +1,5 @@
 const cacheName = 'pwatest-v2';
 const appShellFiles = [
-    '/test.html',
     '/icon-192x192.png'
 ];
 
