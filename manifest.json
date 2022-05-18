@@ -1,0 +1,17 @@
+{
+  "name": "PocketFives Test. ??",
+  "short_name": "PocketFives Test",
+  "theme_color": "#bc0000",
+  "background_color": "#bc0000",
+  "display": "standalone",
+  "Scope": "/test.html",
+  "start_url": "/test.html",
+  "icons": [
+    {
+      "src": "icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+  ],
+  "splash_pages": null
+}
