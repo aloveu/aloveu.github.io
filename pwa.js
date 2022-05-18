@@ -35,3 +35,25 @@ self.addEventListener('activate', (e) => {
         }))
     }));
 });
+
+// 알림에 대한 권한 요청
+const button = document.getElementById('notifications');
+button.addEventListener('click', () => {
+    Notification.requestPermission().then((result) => {
+        if (result === 'granted') {
+            console.log('알림설정 ok');
+            randomNotification();
+        }else{
+            console.log('알림설정 거부');
+        }
+    });
+})
+function randomNotification() {
+    const notifTitle = '알림 테스트';
+    const options = {
+        body: 'body options',
+        icon: '/icon-192x192.png',
+    };
+    new Notification(notifTitle, options);
+    setTimeout(randomNotification, 30000);
+}
