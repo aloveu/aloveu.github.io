@@ -5,6 +5,10 @@ const appShellFiles = [
     './roboto-light.7edb5c1283fd64425d81.woff',
 ];
 
+const OFFLINE_VERSION = 1;
+const CACHE_NAME = "offline";
+const OFFLINE_URL = "offline.html";
+
 self.addEventListener('install', (e) => {
     console.log('[Service Worker] Install');
 
@@ -12,19 +16,35 @@ self.addEventListener('install', (e) => {
         const cache = await caches.open(cacheName);
         console.log('[Service Worker] Caching all: app shell and content');
         await cache.addAll(appShellFiles);
+
+        const offlinecache = await caches.open(CACHE_NAME);
+        // Setting {cache: 'reload'} in the new request will ensure that the
+        // response isn't fulfilled from the HTTP cache; i.e., it will be from
+        // the network.
+        await offlinecache.add(new Request(OFFLINE_URL, { cache: "reload" }));
     })());
 });
 
 self.addEventListener('fetch', (e) => {
     e.respondWith((async () => {
-        const r = await caches.match(e.request);
-        console.log(`[Service Worker] Fetching resource: ${e.request.url}`);
-        if (r) { return r; }
-        const response = await fetch(e.request);
-        const cache = await caches.open(cacheName);
-        console.log(`[Service Worker] Caching new resource: ${e.request.url}`);
-        cache.put(e.request, response.clone());
-        return response;
+        try {
+            const r = await caches.match(e.request);
+            console.log(`[Service Worker] Fetching resource: ${e.request.url}`);
+            if (r) {
+                return r;
+            }
+            const response = await fetch(e.request);
+            const cache = await caches.open(cacheName);
+            console.log(`[Service Worker] Caching new resource: ${e.request.url}`);
+            cache.put(e.request, response.clone());
+            return response;
+        }catch (error) {
+            console.log("Fetch failed; returning offline page instead.", error);
+
+            const cache = await caches.open(CACHE_NAME);
+            const cachedResponse = await cache.match(OFFLINE_URL);
+            return cachedResponse;
+        }
     })());
 });
 
@@ -43,15 +63,3 @@ navigator.setAppBadge(unreadCount).catch((error) => {
     //Do something with the error.
 });
 
-
-function randomNotification() {
-    const notifTitle = '알림 테스트';
-    const options = {
-        body: '알림 내용 전달..',
-        icon: '/icon-192x192.png',
-    };
-    setTimeout(()=>{
-        new Notification(notifTitle, options);
-    }, 5000)
-}
-randomNotification();

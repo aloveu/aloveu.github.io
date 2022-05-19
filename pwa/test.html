@@ -49,6 +49,7 @@ roboto light test
         Notification.requestPermission().then((result) => {
             if (result === 'granted') {
                 console.log('알림설정 ok');
+                randomNotification();
             }else{
                 console.log('알림설정 거부');
             }
@@ -63,6 +64,18 @@ roboto light test
             });
         }
     })
+
+
+    function randomNotification() {
+        const notifTitle = '알림 테스트';
+        const options = {
+            body: '알림 내용 전달..',
+            icon: '/icon-192x192.png',
+        };
+        setTimeout(()=>{
+            new Notification(notifTitle, options);
+        }, 5000)
+    }
 </script>
 </body>
 </html>
