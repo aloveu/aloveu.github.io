@@ -1,6 +1,8 @@
 const cacheName = 'pwatest-v3';
 const appShellFiles = [
-    '/icon-192x192.png'
+    '/icon-192x192.png',
+    'https://staking.pocketfives.com/roboto-black.e79330321758be9bc5db.woff',
+    'https://staking.pocketfives.com/roboto-light.7edb5c1283fd64425d81.woff',
 ];
 
 self.addEventListener('install', (e) => {
@@ -33,4 +35,10 @@ self.addEventListener('activate', (e) => {
             return caches.delete(key);
         }))
     }));
+});
+
+
+const unreadCount = 24;
+navigator.setAppBadge(unreadCount).catch((error) => {
+    //Do something with the error.
 });
