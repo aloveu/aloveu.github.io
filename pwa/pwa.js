@@ -45,7 +45,8 @@ navigator.setAppBadge(unreadCount).catch((error) => {
 
 
 // 알림에 대한 권한 요청
-    Notification?.requestPermission().then((result) => {
+if(Notification && Notification.requestPermission()) {
+    Notification.requestPermission().then((result) => {
         if (result === 'granted') {
             console.log('알림설정 ok');
             randomNotification()
@@ -53,7 +54,7 @@ navigator.setAppBadge(unreadCount).catch((error) => {
             console.log('알림설정 거부');
         }
     });
-
+}
 function randomNotification() {
     const notifTitle = '알림 테스트';
     const options = {
