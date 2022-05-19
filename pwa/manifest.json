@@ -4,7 +4,7 @@
   "theme_color": "#bc0000",
   "background_color": "#bc0000",
   "display": "standalone",
-  "Scope": "/pwa/test.html",
+  "Scope": "/",
   "start_url": "/pwa/test.html",
   "icons": [
     {
@@ -16,16 +16,8 @@
   "shortcuts": [
     {
       "name": "Test Showcut",
-      "short_name": "Test Short Name",
       "description": "Test Description",
       "url": "/dev/2021/11/02/jetbrain.html",
-      "icons": [{ "src": "./icon-192x192.png", "sizes": "192x192" }]
-    },
-    {
-      "name": "Staking",
-      "short_name": "Staking Short Name",
-      "description": "Staking Description",
-      "url": "https://staking.pocketfives.com/staking/poker-staking",
       "icons": [{ "src": "./icon-192x192.png", "sizes": "192x192" }]
     }
   ],
