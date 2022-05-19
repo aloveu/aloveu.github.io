@@ -34,7 +34,7 @@ roboto light test
 
 <strong>RobotoBlack Test</strong>
 
-<button id="notifications">알림권한 설정</button>
+<button id="notifications">알림</button>
 
 
 <button id="clearAppBadge">뱃지삭제</button>
@@ -49,21 +49,11 @@ roboto light test
         Notification.requestPermission().then((result) => {
             if (result === 'granted') {
                 console.log('알림설정 ok');
-                randomNotification();
             }else{
                 console.log('알림설정 거부');
             }
         });
     })
-    function randomNotification() {
-        const notifTitle = '알림 테스트';
-        const options = {
-            body: 'body options',
-            icon: '/icon-192x192.png',
-        };
-        new Notification(notifTitle, options);
-        setTimeout(randomNotification, 30000);
-    }
 
     // 앱 뱃지 삭제
     document.getElementById('clearAppBadge').addEventListener('click', () => {

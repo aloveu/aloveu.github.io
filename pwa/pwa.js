@@ -1,4 +1,4 @@
-const cacheName = 'pwatest-v4';
+const cacheName = 'pwatest-v5';
 const appShellFiles = [
     './icon-192x192.png',
     './roboto-black.e79330321758be9bc5db.woff',
@@ -42,3 +42,25 @@ const unreadCount = 24;
 navigator.setAppBadge(unreadCount).catch((error) => {
     //Do something with the error.
 });
+
+
+// 알림에 대한 권한 요청
+Notification.requestPermission().then((result) => {
+    if (result === 'granted') {
+        console.log('알림설정 ok');
+        randomNotification()
+    }else{
+        console.log('알림설정 거부');
+    }
+});
+
+function randomNotification() {
+    const notifTitle = '알림 테스트';
+    const options = {
+        body: '알림 내용 전달..',
+        icon: '/icon-192x192.png',
+    };
+    setTimeout(()=>{
+        new Notification(notifTitle, options);
+    }, 5000)
+}
