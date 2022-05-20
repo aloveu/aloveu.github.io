@@ -17,7 +17,7 @@
     {
       "name": "Test Showcut",
       "description": "Test Description",
-      "url": "/dev/2021/11/02/jetbrain.html",
+      "url": "https://aloveu.github.io/dev/2021/11/02/jetbrain.html",
       "icons": [{ "src": "./icon-192x192.png", "sizes": "192x192" }]
     }
   ],
