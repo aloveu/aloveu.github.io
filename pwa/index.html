@@ -22,26 +22,19 @@
         }
         body{
             font-family: 'RobotoLight';
-        }
-        strong{
-            font-family: 'RobotoBlack';
+            text-align: center;
         }
     </style>
 </head>
 <body>
-pwa test 입니다.
-roboto light test
 
-<strong>RobotoBlack Test</strong>
-
-<button id="notifications">알림</button>
-
-
-<button id="clearAppBadge">뱃지삭제</button>
+    <h1>PWA</h1>
+    <p>PWA Test 입니다.</p>
+    <button id="notifications">알림 권한 요청</button>
 
 <script>
     if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./pwa.js');
+        navigator.serviceWorker.register('./service-worker.js');
     };
 
     // 알림에 대한 권한 요청
@@ -56,26 +49,25 @@ roboto light test
         });
     })
 
-    // 앱 뱃지 삭제
-    document.getElementById('clearAppBadge').addEventListener('click', () => {
-        if(confirm('clear app badge')) {
-            navigator.clearAppBadge().catch((error) => {
-                // Do something with the error.
-            });
-        }
-    })
-
 
     function randomNotification() {
         const notifTitle = '알림 테스트';
         const options = {
-            body: '알림 내용 전달..',
+            body: 'PWA 알림 테스트 입니다. ',
             icon: '/icon-192x192.png',
         };
         setTimeout(()=>{
             new Notification(notifTitle, options);
         }, 5000)
     }
+
+        
+    window.addEventListener('offline', () => {
+        window.location.reload();
+    });
+    navigator.serviceWorker.ready.then((registration) => {
+        registration.update();
+    });
 </script>
 </body>
 </html>

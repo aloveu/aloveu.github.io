@@ -4,8 +4,8 @@
   "theme_color": "#bc0000",
   "background_color": "#bc0000",
   "display": "standalone",
-  "Scope": "/",
-  "start_url": "/pwa/test.html",
+  "Scope": "./",
+  "start_url": "./",
   "icons": [
     {
       "src": "./icon-192x192.png",
@@ -15,9 +15,15 @@
   ],
   "shortcuts": [
     {
-      "name": "Test Showcut",
+      "name": "메뉴1",
       "description": "Test Description",
-      "url": "https://aloveu.github.io/dev/2021/11/02/jetbrain.html",
+      "url": "./",
+      "icons": [{ "src": "./icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "메뉴2",
+      "description": "메뉴2 설명",
+      "url": "./",
       "icons": [{ "src": "./icon-192x192.png", "sizes": "192x192" }]
     }
   ],
