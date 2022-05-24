@@ -74,3 +74,9 @@ self.addEventListener('notificationclick', (event) => {
         })
     );
 });
+
+
+const unreadCount = 24;
+navigator.setAppBadge(unreadCount).catch((error) => {
+    //Do something with the error.
+});
