@@ -1,5 +1,10 @@
-const CACHE_NAME = 'pwatest-v5';
+const CACHE_NAME = 'pwatest-v7';
 const OFFLINE_URL = "./offline.html";
+const ASSETS = [
+    './roboto-black.e79330321758be9bc5db.woff',
+    './icon-192x192.png',
+    './roboto-light.7edb5c1283fd64425d81.woff'
+]
 
 //install
 self.addEventListener('install', (e) => {
@@ -8,7 +13,7 @@ self.addEventListener('install', (e) => {
             console.log('서비스워커 Install');
 
             const cache = await caches.open(CACHE_NAME);
-            await cache.add(new Request(OFFLINE_URL, {cache: 'reload'}));
+            await cache.addAll([new Request(OFFLINE_URL, {cache: 'reload'}), ...ASSETS]);
         }catch(err){
             console.log('install error', err);
         }
@@ -25,25 +30,25 @@ self.addEventListener('activate', e => {
 
 //data fetch
 self.addEventListener('fetch', e => {
-    console.log("데이터 요청(fetch)!", e.request)
-
     // fetch  이벤트 응답 반환. interceptor 역할할 수 있음.
     e.respondWith((async () => {
         try {
-            const preloadResponse = await e.preloadResponse;
-            if (preloadResponse) {
-                return preloadResponse;
+            const r = await caches.match(e.request);
+            if (r) {
+                console.log('캐싱된 파일', e.request);
+                return r;
             }
+            console.log("네트워크 요청", e.request)
 
             const networkResponse = await fetch(e.request);
             return networkResponse;
         }catch (err) {
             console.log("Fetch failed;", err);
 
-          const cache = await caches.open(CACHE_NAME);
-          const cachedResponse = await cache.match(OFFLINE_URL);
-          console.log(cachedResponse);
-          return cachedResponse;
+            const cache = await caches.open(CACHE_NAME);
+            const cachedResponse = await cache.match(OFFLINE_URL);
+            console.log(cachedResponse);
+            return cachedResponse;
         }
     })());
 });
@@ -62,18 +67,10 @@ self.addEventListener('notificationclick', (event) => {
                     return client.focus();
                 }
             }
-            // If not, then open the target URL in a new window/tab.
+            // If not, then open the target URL in a new window/tab.    ㅈ
             if (clients.openWindow) {
                 return clients.openWindow(url);
             }
         })
     );
-});
-
-var savedPrompt = null;
-
-self.addEventListener('beforeinstallprompt', (event)=>{
-    event.preventDefault();
-    savedPrompt = event;
-    alert('df')
 });

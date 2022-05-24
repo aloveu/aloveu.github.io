@@ -24,14 +24,28 @@
             font-family: 'RobotoLight';
             text-align: center;
         }
+        .install-banner{
+            position: fixed;
+            bottom:0;
+            left: 0;
+            display: none;
+            width:100%;
+            padding:20px 0;
+            background:#212121;
+            color: #fff;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
 
-    <h1>PWA</h1>
-    <p>PWA Test 입니다.</p>
-    <button id="notifications">알림 권한 요청</button>
+<h1>PWA</h1>
+<p>PWA Test 입니다.</p>
+<button id="notifications">알림 권한 요청</button>
 
+<div class="install-banner">
+    <button id="buttonInstall">설치</button>
+</div>
 <script>
     if('serviceWorker' in navigator) {
         navigator.serviceWorker.register('./service-worker.js');
@@ -61,13 +75,37 @@
         }, 5000)
     }
 
-        
+
     window.addEventListener('offline', () => {
         window.location.reload();
     });
     navigator.serviceWorker.ready.then((registration) => {
         registration.update();
     });
+
+
+    // 앱 설치 커스텀
+    let deferredPrompt;
+    window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredPrompt = e;
+        console.log(`설치 전`);
+
+        document.getElementsByClassName('install-banner')[0].style.display = 'block';
+    });
+
+    document.getElementById('buttonInstall').addEventListener('click', async () => {
+        hideInstallPromotion();
+        deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        console.log(`User response to the install prompt: ${outcome}`);
+        deferredPrompt = null;
+    });
+
+    function hideInstallPromotion(){
+        document.getElementsByClassName('install-banner')[0].style.display = 'none'
+    }
+
 </script>
 </body>
 </html>
