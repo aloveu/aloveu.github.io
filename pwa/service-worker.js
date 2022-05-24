@@ -69,3 +69,11 @@ self.addEventListener('notificationclick', (event) => {
         })
     );
 });
+
+var savedPrompt = null;
+
+self.addEventListener('beforeinstallprompt', (event)=>{
+    event.preventDefault();
+    savedPrompt = event;
+    alert('df')
+});
