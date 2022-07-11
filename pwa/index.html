@@ -1,116 +1,117 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>PWA test</title>
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="manifest.json" />
     <style>
-        @font-face {
-            font-family: 'RobotoBlack';
-            src: url('./roboto-black.e79330321758be9bc5db.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: 'RobotoLight';
-            src: url('./roboto-light.7edb5c1283fd64425d81.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
-        body{
-            font-family: 'RobotoLight';
-            text-align: center;
-        }
-        .install-banner{
-            position: fixed;
-            bottom:0;
-            left: 0;
-            display: none;
-            width:100%;
-            padding:20px 0;
-            background:#212121;
-            color: #fff;
-            text-align: center;
-        }
+      @font-face {
+        font-family: "RobotoBlack";
+        src: url("./roboto-black.e79330321758be9bc5db.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "RobotoLight";
+        src: url("./roboto-light.7edb5c1283fd64425d81.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      body {
+        font-family: "RobotoLight";
+        text-align: center;
+      }
+      .install-banner {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: none;
+        width: 100%;
+        padding: 20px 0;
+        background: #212121;
+        color: #fff;
+        text-align: center;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <h1>PWA</h1>
+    <p>PWA Test 입니다.</p>
+    <button id="notifications">알림 권한 요청</button>
 
-<h1>PWA</h1>
-<p>PWA Test 입니다.</p>
-<button id="notifications">알림 권한 요청</button>
+    <div class="install-banner">
+      <button id="buttonInstall">설치</button>
+    </div>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("./service-worker.js");
+      }
 
-<div class="install-banner">
-    <button id="buttonInstall">설치</button>
-</div>
-<script>
-    if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./service-worker.js');
-    };
-
-    // 알림에 대한 권한 요청
-    document.getElementById('notifications').addEventListener('click', () => {
+      // 알림에 대한 권한 요청
+      document.getElementById("notifications").addEventListener("click", () => {
         Notification.requestPermission().then((result) => {
-            if (result === 'granted') {
-                console.log('알림설정 ok');
-                randomNotification();
-            }else{
-                console.log('알림설정 거부');
-            }
+          if (result === "granted") {
+            console.log("알림설정 ok");
+            randomNotification();
+          } else {
+            console.log("알림설정 거부");
+          }
         });
-    })
+      });
 
-
-    function randomNotification() {
-        const notifTitle = '알림 테스트';
+      function randomNotification() {
+        const notifTitle = "알림 테스트";
         const options = {
-            body: 'PWA 알림 테스트 입니다. ',
-            icon: '/pwa/icon-192x192.png',
+          body: "PWA 알림 테스트 입니다. ",
+          icon: "/pwa/icon-192x192.png",
         };
-        setTimeout(()=>{
-            new Notification(notifTitle, options);
-        }, 5000)
-    }
+        setTimeout(() => {
+          new Notification(notifTitle, options);
+        }, 5000);
+      }
 
-
-    window.addEventListener('offline', () => {
+      window.addEventListener("offline", () => {
         window.location.reload();
-    });
-    navigator.serviceWorker.ready.then((registration) => {
+      });
+      navigator.serviceWorker.ready.then((registration) => {
         registration.update();
-    });
+      });
 
-
-    // 앱 설치 커스텀
-    let deferredPrompt;
-    window.addEventListener('beforeinstallprompt', (e) => {
+      // 앱 설치 커스텀
+      let deferredPrompt;
+      window.addEventListener("beforeinstallprompt", (e) => {
         e.preventDefault();
         deferredPrompt = e;
         console.log(`설치 전`);
 
-        document.getElementsByClassName('install-banner')[0].style.display = 'block';
-    });
+        document.getElementsByClassName("install-banner")[0].style.display =
+          "block";
+      });
 
-    document.getElementById('buttonInstall').addEventListener('click', async () => {
-        hideInstallPromotion();
-        deferredPrompt.prompt();
-        const { outcome } = await deferredPrompt.userChoice;
-        console.log(`User response to the install prompt: ${outcome}`);
-        deferredPrompt = null;
-    });
+      document
+        .getElementById("buttonInstall")
+        .addEventListener("click", async () => {
+          hideInstallPromotion();
+          deferredPrompt.prompt();
+          const { outcome } = await deferredPrompt.userChoice;
+          console.log(`User response to the install prompt: ${outcome}`);
+          deferredPrompt = null;
+        });
 
-    function hideInstallPromotion(){
-        document.getElementsByClassName('install-banner')[0].style.display = 'none'
-    }
+      function hideInstallPromotion() {
+        document.getElementsByClassName("install-banner")[0].style.display =
+          "none";
+      }
 
-
-    const channel = new BroadcastChannel('sw-messages');
-    channel.addEventListener('message', event => {
-        console.log('Received', event.data);
-    });
-</script>
-</body>
+      const channel = new BroadcastChannel("sw-messages");
+      channel.addEventListener("message", (event) => {
+        console.log("Received", event.data);
+      });
+    </script>
+  </body>
 </html>
