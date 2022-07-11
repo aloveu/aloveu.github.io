@@ -28,6 +28,10 @@ self.addEventListener('activate', e => {
     console.log('서비스워커 동작(activation) 시작됨!');
 });
 
+
+const channel = new BroadcastChannel('sw-messages');
+channel.postMessage({title: 'Hello from SW'});
+
 //data fetch
 self.addEventListener('fetch', e => {
     // fetch  이벤트 응답 반환. interceptor 역할할 수 있음.
@@ -35,9 +39,11 @@ self.addEventListener('fetch', e => {
         try {
             const r = await caches.match(e.request);
             if (r) {
+                channel.postMessage({title: e.request});
                 console.log('캐싱된 파일', e.request);
                 return r;
             }
+            channel.postMessage({title: e.request});
             console.log("네트워크 요청", e.request)
 
             const networkResponse = await fetch(e.request);
