@@ -61,8 +61,13 @@ self.addEventListener("fetch", (e) => {
   );
 });
 
+self.addEventListener("fetch", (e) => {
+  console.log("두번째 fetch");
+});
+
 //notification
 self.addEventListener("notificationclick", (event) => {
+  console.log("notificationclick");
   let url = "https://aloveu.github.io/pwa/index.html";
   event.notification.close(); // Android needs explicit close.
   event.waitUntil(
