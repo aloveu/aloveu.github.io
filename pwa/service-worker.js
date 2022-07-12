@@ -62,7 +62,27 @@ self.addEventListener("fetch", (e) => {
 });
 
 self.addEventListener("fetch", (e) => {
-  console.log("두번째 fetch");
+  e.respondWith(
+    (async () => {
+      try {
+        console.log("두번째 호출 ㅇㅇ");
+        const r = await caches.match(e.request);
+        if (r) {
+          return r;
+        }
+
+        const networkResponse = await fetch(e.request);
+        return networkResponse;
+      } catch (err) {
+        console.log("Fetch failed;", err);
+
+        const cache = await caches.open(CACHE_NAME);
+        const cachedResponse = await cache.match(OFFLINE_URL);
+        console.log(cachedResponse);
+        return cachedResponse;
+      }
+    })()
+  );
 });
 
 //notification
