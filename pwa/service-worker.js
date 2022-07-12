@@ -9,6 +9,7 @@ const channel = new BroadcastChannel("sw-messages");
 
 //install
 self.addEventListener("install", (e) => {
+  channel.postMessage({ title: "postmessage test" });
   e.waitUntil(
     (async () => {
       try {
@@ -25,7 +26,6 @@ self.addEventListener("install", (e) => {
     })()
   );
 
-  channel.postMessage({ title: "postmessage test" });
   self.skipWaiting();
 });
 
@@ -37,6 +37,7 @@ self.addEventListener("activate", (e) => {
 //data fetch
 self.addEventListener("fetch", (e) => {
   // fetch  이벤트 응답 반환. interceptor 역할할 수 있음.
+  channel.postMessage({ type: "fetch" });
   e.respondWith(
     (async () => {
       try {

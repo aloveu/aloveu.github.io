@@ -110,7 +110,7 @@
 
       const channel = new BroadcastChannel("sw-messages");
       channel.addEventListener("message", (event) => {
-        console.log("Received", event.data);
+        console.log("Received", event);
       });
     </script>
   </body>
