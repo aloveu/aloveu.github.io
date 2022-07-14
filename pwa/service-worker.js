@@ -113,3 +113,14 @@ const unreadCount = 24;
 navigator.setAppBadge(unreadCount).catch((error) => {
   //Do something with the error.
 });
+
+let test = "";
+channel.addEventListener("message", (event) => {
+  console.log("Received", event);
+  if (event.data.type === "input") {
+    test = event.data.data.test;
+  }
+  if (event.data.type === "get") {
+    channel.postMessage({ type: "get", data: { test } });
+  }
+});
